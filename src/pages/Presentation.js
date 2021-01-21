@@ -6,6 +6,7 @@ import { Col, Row, Card, Image, Button, Container, ListGroup, Tooltip, OverlayTr
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Code from "../components/CodeEditor";
+import GitHubButton from 'react-github-btn';
 
 import { Routes } from "../routes";
 import ThemesbergLogoIcon from "../assets/img/themesberg.svg";
@@ -111,13 +112,12 @@ export default () => {
               <h3 className="text-muted mb-5 h4">
                 Open source admin dashboard using Bootstrap 5
               </h3>
-              <div className="d-flex justify-content-center mb-6">
+              <div className="d-flex justify-content-center align-items-center mb-6">
                 <Button variant="secondary" as={Link} to={Routes.DashboardOverview.path} className="text-dark me-3">
                   <FontAwesomeIcon icon={faChartLine} className="d-none d-sm-inline me-2" /> Dashboard Demo
                 </Button>
-                <Button variant="outline-soft" as={HashLink} to="#pricing">
-                  View pricing
-                </Button>
+                <Button variant="outline-soft" as={HashLink} to="#pricing" className="me-3"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
+                <GitHubButton href="https://github.com/themesberg/volt-react-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
               </div>
               <div className="d-flex justify-content-center flex-column mb-6">
                 <Card.Link href="https://themesberg.com" target="_blank">
@@ -217,8 +217,8 @@ export default () => {
               <h2 className="d-flex align-items-center">Mapbox <Badge pill bg='secondary' text="dark" className="badge-md ms-3 mb-0 fs-6">Pro</Badge></h2>
               <p className="mb-3 lead fw-bold">Markers and cards integration with Leaflet.js</p>
               <p className="mb-4">You can use this map to add markers with custom cards and show them on a map using our custom MapBox integration with Leaflet.js</p>
-              <Button as={Link} to={Routes.Map.path} className="me-3" variant="secondary" target="_blank"><FontAwesomeIcon icon={faMapMarkedAlt} className="me-2" /> Demo Map</Button>
-              <Button as={Link} to={Routes.PluginMap.path} variant="outline-primary" target="_blank"><FontAwesomeIcon icon={faBook} className="me-2" /> Guide</Button>
+              <Button href="https://demo.themesberg.com/volt-pro-react/#/map" target="_blank" className="me-3" variant="secondary" target="_blank"><FontAwesomeIcon icon={faMapMarkedAlt} className="me-2" /> Demo Map</Button>
+              <Button href="https://demo.themesberg.com/volt-pro-react/#/plugins/map" target="_blank" variant="outline-primary" target="_blank"><FontAwesomeIcon icon={faBook} className="me-2" /> Guide</Button>
             </Col>
             <Col lg={6} className="order-lg-1">
               <Image src={MapboxImg} alt="MapBox Leaflet.js Custom Integration Mockup" />
@@ -233,8 +233,8 @@ export default () => {
               <p className="mb-4">
                 We created a fully editable calendar where you can add, edit and delete events for your admin dashboard.
               </p>
-              <Button as={Link} to={Routes.Calendar.path} className="me-3" variant="secondary" target="_blank"><FontAwesomeIcon icon={faCalendarAlt} className="me-2" /> Demo Calendar</Button>
-              <Button as={Link} to={Routes.PluginCalendar.path} variant="outline-primary" target="_blank"><FontAwesomeIcon icon={faBook} className="me-2" /> Guide</Button>
+              <Button href="https://demo.themesberg.com/volt-pro-react/#/calendar" target="_blank" className="me-3" variant="secondary" target="_blank"><FontAwesomeIcon icon={faCalendarAlt} className="me-2" /> Demo Calendar</Button>
+              <Button href="https://demo.themesberg.com/volt-pro-react/#/plugins/calendar" target="_blank" variant="outline-primary" target="_blank"><FontAwesomeIcon icon={faBook} className="me-2" /> Guide</Button>
             </Col>
             <Col lg={6}>
               <Image src={CalendarImg} alt="Calendar Preview" />

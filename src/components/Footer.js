@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCogs, faDownload, faRocket, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import BS5Logo from "../assets/img/technologies/bootstrap-5-logo.svg";
 import ReactLogo from "../assets/img/technologies/react-logo.svg";
-
+import GitHubButton from 'react-github-btn';
 
 export default (props) => {
   const currentYear = moment().get("year");
@@ -22,6 +22,10 @@ export default (props) => {
         <Card className="theme-settings">
           <Card.Body className="pt-4">
             <Button className="theme-settings-close" variant="close" size="sm" aria-label="Close" onClick={() => { toggleSettings(false) }} />
+            <div className="d-flex justify-content-between align-items-center mb-3">
+              <p className="m-0">Give us a lucky star 🙏</p>
+              <GitHubButton href="https://github.com/themesberg/volt-react-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
+            </div>
             <Button href="https://themesberg.com/product/dashboard/volt-react" target="_blank" variant="primary" className="mb-3 w-100"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
             <Button href="https://themesberg.com/product/dashboard/volt-pro-react" target="_blank" variant="secondary" className="mb-3 w-100"><FontAwesomeIcon icon={faRocket} className="me-1" /> Upgrade to Pro</Button>
             <p className="fs-7 text-gray-700 text-center">Available in the following technologies:</p>

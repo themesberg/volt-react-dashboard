@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import SimpleBar from 'simplebar-react';
 import { useLocation } from "react-router-dom";
-import { isMobile } from "react-device-detect";
 import { CSSTransition } from 'react-transition-group';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faBoxOpen, faChartPie, faCog, faFileAlt, faHandHoldingUsd, faSignOutAlt, faTable, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -21,10 +20,6 @@ export default (props = {}) => {
   const showClass = show ? "show" : "";
 
   const onCollapse = () => setShow(!show);
-  const onMouseEnter = () => props.onMouseEnter && props.onMouseEnter();
-  const onMouseLeave = () => props.onMouseLeave && props.onMouseLeave();
-
-  const events = isMobile ? {} : { onMouseEnter, onMouseLeave };
 
   const CollapsableNavItem = (props) => {
     const { eventKey, title, icon, children = null } = props;
@@ -83,7 +78,7 @@ export default (props = {}) => {
         </Navbar.Toggle>
       </Navbar>
       <CSSTransition timeout={300} in={show} classNames="sidebar-transition">
-        <SimpleBar {...events} className={`collapse ${showClass} sidebar d-md-block bg-primary text-white`}>
+        <SimpleBar className={`collapse ${showClass} sidebar d-md-block bg-primary text-white`}>
           <div className="sidebar-inner px-4 pt-3">
             <div className="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
               <div className="d-flex align-items-center">
@@ -109,7 +104,7 @@ export default (props = {}) => {
               <NavItem title="Settings" icon={faCog} link={Routes.Settings.path} />
 
               <CollapsableNavItem eventKey="tables/" title="Tables" icon={faTable}>
-                <NavItem title="Bootstrap Tables" link={Routes.BootstrapTables.path} />
+                <NavItem title="Bootstrap Table" link={Routes.BootstrapTables.path} />
               </CollapsableNavItem>
 
               <CollapsableNavItem eventKey="examples/" title="Page Examples" icon={faFileAlt}>

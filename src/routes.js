@@ -36,13 +36,6 @@ export const Routes = {
     DocsBuild: { path: "/documentation/build-tools" },
     DocsChangelog: { path: "/documentation/changelog" },
 
-    // plugins
-    PluginCharts: { path: "/plugins/charts" },
-    PluginCalendar: { path: "/plugins/calendar" },
-    PluginDatatable: { path: "/plugins/datatable" },
-    PluginMap: { path: "/plugins/map" },
-    PluginDropzone: { path: "/plugins/dropzone" },
-    PluginSweetAlert: { path: "/plugins/sweet-alert" },
 
     // components
     Accordions: { path: "/components/accordions" },

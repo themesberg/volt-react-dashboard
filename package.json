@@ -1,16 +1,24 @@
 {
   "name": "volt-react-dashboard",
-  "description": "Volt React is an Admin Dashboard based on React.js and Bootstrap 5, featuring over 800 UI elements, plugins, and pages.",
+  "description": "Volt React is a free and open source admin dashboard template powered by React.js and Bootstrap 5",
   "author": "Themesberg",
   "keywords": [
     "bootstrap 5",
     "react",
     "react dashboard",
-    "react admin template"
+    "react admin template",
+    "free react",
+    "react ui library",
+    "react bootstrap 5"
   ],
-  "homepage": "https://demo.themesberg.com/volt-pro-react",
+  "license": "MIT",
+  "homepage": "https://demo.themesberg.com/volt-react-dashboard",
   "bugs": {
-    "url": "https://themesberg.com/contact"
+    "url": "https://github.com/themesberg/volt-react-dashboard/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themesberg/volt-react-dashboard"
   },
   "version": "1.0.0",
   "private": true,
@@ -28,16 +36,14 @@
     "bootstrap": "5.0.0-beta1",
     "chartist": "^0.11.4",
     "chartist-plugin-tooltips-updated": "^0.1.4",
-    "jquery": "^3.5.1",
     "moment-timezone": "^0.5.31",
     "node-sass": "^4.14.1",
-    "nouislider-react": "^3.3.9",
     "react": "^16.13.1",
     "react-chartist": "^0.14.3",
     "react-copy-to-clipboard": "^5.0.3",
     "react-datetime": "^3.0.4",
-    "react-device-detect": "^1.15.0",
     "react-dom": "^16.13.1",
+    "react-github-btn": "^1.2.0",
     "react-live": "^2.2.3",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.3.1",
