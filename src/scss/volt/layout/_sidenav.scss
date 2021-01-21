@@ -38,6 +38,9 @@
 				color: $light;
 				background-color: #2e3650;
 			}
+			&.active {
+				color: $white;
+			}
 		}
 		margin-bottom: .2rem;
 	}
