@@ -80,38 +80,50 @@ This product is built using the following widely used technologies:
 
 ### Using Yarn
 
-a.1 Make sure you have [Yarn](https://yarnpkg.com/) installed.
-a.2. After installing `yarn`, open a terminal and run `yarn install` in the main volt folder to download all project dependencies.
+3. Make sure you have [Yarn](https://yarnpkg.com/) installed.
+4. After installing `yarn`, open a terminal and run `yarn install` in the main volt folder to download all project dependencies.
 
 ```
 yarn install
 ```
 
-a.3. Then start the app in development mode by running the following command in terminal:
+5. Then start the app in development mode by running the following command in terminal:
 
 ```
 yarn start
 ```
 
-a.4. Open http://localhost:3000 to view it in the browser. Any changes you make to the code will be automatically reflected in the browser.
+6. Open http://localhost:3000 to view it in the browser. Any changes you make to the code will be automatically reflected in the browser.
+
+7. If you want to generate the production files, change the `homepage` value from the `package.json` to the domain name that the app will be hosted on, and then run the following command in the terminal:
+
+```
+yarn build
+```
 
 ### Using NPM
 
-b.1. Make sure you have [Node.js](https://nodejs.org/en/) installed. Make sure the installed Node version is >= 8.10 and of npm >= 5.6
+3. Make sure you have [Node.js](https://nodejs.org/en/) installed. Make sure the installed Node version is >= 8.10 and of npm >= 5.6
 
-b.2. After installing Node.js, open a terminal and run `npm install` in the main `volt-react-dashboard/` folder to download all project dependencies. You'll find them in the `node_modules/` folder.
+4. After installing Node.js, open a terminal and run `npm install` in the main `volt-react-dashboard/` folder to download all project dependencies. You'll find them in the `node_modules/` folder.
 
 ```
 npm install
 ```
 
-b.3. Then start the app in development mode by running the following command in terminal:
+5. Then start the app in development mode by running the following command in terminal:
 
 ```
 npm run start
 ```
 
-b.4. Open http://localhost:3000 to view it in the browser. Any changes you make to the code will be automatically reflected in the browser.
+6. Open http://localhost:3000 to view it in the browser. Any changes you make to the code will be automatically reflected in the browser.
+
+7. If you want to generate the production files, change the `homepage` value from the `package.json` to the domain name that the app will be hosted on, and then run the following command in the terminal:
+
+```
+npm run build
+```
 
 ## Documentation
 The documentation for Volt is hosted on our [website](https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/quick-start/).
