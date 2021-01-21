@@ -96,7 +96,7 @@ export default () => {
                 <Nav.Link as={HashLink} to="#download">Upgrade to Pro</Nav.Link>
               </Nav>
             </Navbar.Collapse>
-            <Button as={HashLink} to="#download" variant="outline-white" className="ms-3 d-none d-sm-inline"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
+            <Button as={HashLink} to="#download" variant="outline-white" className="ms-3"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
           </div>
         </Container>
       </Navbar>
@@ -104,16 +104,16 @@ export default () => {
         <Container>
           <Row>
             <Col xs={12} className="text-center">
+              <div className="react-big-icon"><span className="fab fa-react"></span></div>
               <h1 className="fw-bolder text-secondary">Volt React Dashboard</h1>
               <p className="text-muted fw-light mb-5 h5">Open source powered by React.js and Bootstrap 5</p>
-              <div className="d-flex justify-content-center align-items-center mb-5">
+              <div className="d-flex align-items-center justify-content-center">
                 <Button variant="secondary" as={Link} to={Routes.DashboardOverview.path} className="text-dark me-3">
                   Explore dashboard <FontAwesomeIcon icon={faExternalLinkAlt} className="d-none d-sm-inline ms-1" />
                 </Button>
-                <GitHubButton href="https://github.com/themesberg/volt-react-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
+                <GitHubButton className="mt-lg-2" href="https://github.com/themesberg/volt-react-dashboard" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
               </div>
-              <div className="react-big-icon"><span className="fab fa-react"></span></div>
-              <div className="d-flex justify-content-center flex-column mb-6">
+              <div className="d-flex justify-content-center flex-column mb-6 mt-5">
                 <div className="text-center mb-6">
                   <a href="https://themesberg.com" target="_blank">
                     <Image src={ThemesbergLogoIcon} height={25} width={25} className="mb-3" alt="Themesberg Logo" />

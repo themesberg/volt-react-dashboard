@@ -24,7 +24,7 @@ export default (props) => {
             <Button className="theme-settings-close" variant="close" size="sm" aria-label="Close" onClick={() => { toggleSettings(false) }} />
             <div className="d-flex justify-content-between align-items-center mb-3">
               <p className="m-0 mb-1">Give us a lucky star <span role="img" aria-label="gratitude">🙏</span></p>
-              <GitHubButton href="https://github.com/themesberg/volt-react-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
+              <GitHubButton href="https://github.com/themesberg/volt-react-dashboard" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
             </div>
             <Button href="https://themesberg.com/product/dashboard/volt-react" target="_blank" variant="primary" className="mb-3 w-100"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
             <Button href="https://themesberg.com/product/dashboard/volt-pro-react" target="_blank" variant="secondary" className="mb-3 w-100"><FontAwesomeIcon icon={faRocket} className="me-1" /> Upgrade to Pro</Button>
