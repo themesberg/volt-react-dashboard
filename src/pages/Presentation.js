@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBook, faExternalLinkAlt, faTimesCircle, faCheckCircle, faCalendarAlt, faCodeBranch, faShoppingCart, faChartLine, faFolder, faMapMarkedAlt, faPager, faFileCode, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faExternalLinkAlt, faTimesCircle, faCheckCircle, faCalendarAlt, faCodeBranch, faShoppingCart, faFolder, faMapMarkedAlt, faPager, faFileCode, faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faBootstrap, faGithub, faJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
 import { Col, Row, Card, Image, Button, Container, ListGroup, Tooltip, OverlayTrigger, Form, Navbar, Nav, Badge } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -108,18 +108,18 @@ export default () => {
               <p className="text-muted fw-light mb-5 h5 px-lg-12">Open source powered by React.js and Bootstrap 5</p>
               <div className="d-flex justify-content-center align-items-center mb-5">
                 <Button variant="secondary" as={Link} to={Routes.DashboardOverview.path} className="text-dark me-3">
-                 Explore dashboard <FontAwesomeIcon icon={faExternalLinkAlt} className="d-none d-sm-inline ms-1" />
+                  Explore dashboard <FontAwesomeIcon icon={faExternalLinkAlt} className="d-none d-sm-inline ms-1" />
                 </Button>
                 <GitHubButton href="https://github.com/themesberg/volt-react-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
               </div>
               <div className="react-big-icon"><span className="fab fa-react"></span></div>
               <div className="d-flex justify-content-center flex-column mb-6">
-                <Card.Link href="https://themesberg.com" target="_blank">
-                  <Image src={ThemesbergLogoIcon} height={25} width={25} className="d-block mx-auto mb-3" alt="Themesberg Logo" />
-                  <span className="text-muted font-small">
-                    A Themesberg production
-                  </span>
-                </Card.Link>
+                <div className="text-center mb-6">
+                  <a href="https://themesberg.com" target="_blank">
+                    <Image src={ThemesbergLogoIcon} height={25} width={25} className="mb-3" alt="Themesberg Logo" />
+                    <p className="text-muted font-small m-0">A Themesberg production</p>
+                  </a>
+                </div>
               </div>
             </Col>
           </Row>

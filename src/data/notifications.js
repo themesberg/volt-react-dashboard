@@ -1,5 +1,4 @@
 
-import { Routes } from "../routes";
 import Profile1 from "../assets/img/team/profile-picture-1.jpg"
 import Profile2 from "../assets/img/team/profile-picture-2.jpg"
 import Profile3 from "../assets/img/team/profile-picture-3.jpg"
