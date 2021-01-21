@@ -113,6 +113,7 @@ export default () => {
                 </Button>
                 <GitHubButton href="https://github.com/themesberg/volt-react-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
               </div>
+              <div className="react-big-icon"><span className="fab fa-react"></span></div>
               <div className="d-flex justify-content-center flex-column mb-6">
                 <Card.Link href="https://themesberg.com" target="_blank">
                   <Image src={ThemesbergLogoIcon} height={25} width={25} className="d-block mx-auto mb-3" alt="Themesberg Logo" />
