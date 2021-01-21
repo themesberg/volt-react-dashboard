@@ -1,22 +1,11 @@
 
-
 export const Routes = {
     // pages
     Presentation: { path: "/" },
     DashboardOverview: { path: "/dashboard/overview" },
-    DashboardTraffic: { path: "/dashboard/traffic-and-engagement" },
-    DashboardProductAnalysis: { path: "/dashboard/product-analysis" },
-    Messages: { path: "/messages" },
-    SingleMessage: { path: "/message" },
-    Users: { path: "/users" },
     Transactions: { path: "/transactions" },
-    Tasks: { path: "/tasks" },
     Settings: { path: "/settings" },
-    Calendar: { path: "/calendar" },
-    Map: { path: "/map" },
-    Datatables: { path: "/tables/datatables" },
     BootstrapTables: { path: "/tables/bootstrap-tables" },
-    Pricing: { path: "/examples/pricing" },
     Billing: { path: "/examples/billing" },
     Invoice: { path: "/examples/invoice" },
     Signin: { path: "/examples/sign-in" },
@@ -35,7 +24,6 @@ export const Routes = {
     DocsFolderStructure: { path: "/documentation/folder-structure" },
     DocsBuild: { path: "/documentation/build-tools" },
     DocsChangelog: { path: "/documentation/changelog" },
-
 
     // components
     Accordions: { path: "/components/accordions" },

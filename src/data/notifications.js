@@ -13,7 +13,7 @@ export default [
         "image": Profile1,
         "sender": "Jose Leos",
         "time": "a few moments ago",
-        "link": Routes.Calendar.path,
+        "link": "#",
         "message": `Added you to an event "Project stand-up" tomorrow at 12:30 AM.`
     },
     {
@@ -22,7 +22,7 @@ export default [
         "image": Profile2,
         "sender": "Neil Sims",
         "time": "2 hrs ago",
-        "link": Routes.Tasks.path,
+        "link": "#",
         "message": `You've been assigned a task for "Awesome new project".`
     },
     {
@@ -31,7 +31,7 @@ export default [
         "image": Profile3,
         "sender": "Roberta Casas",
         "time": "5 hrs ago",
-        "link": Routes.Tasks.path,
+        "link": "#",
         "message": `Tagged you in a document called "First quarter financial plans".`
     },
     {
@@ -40,7 +40,7 @@ export default [
         "image": Profile4,
         "sender": "Joseph Garth",
         "time": "1 day ago",
-        "link": Routes.Messages.path,
+        "link": "#",
         "message": `New message: "Hey, what's up? All set for the presentation?"`
     },
     {
@@ -49,7 +49,7 @@ export default [
         "image": Profile5,
         "sender": "Jose Leos",
         "time": "2 days ago",
-        "link": Routes.Messages.path,
+        "link": "#",
         "message": `New message: "We need to improve the UI/UX for the landing page."`
     },
 ]
