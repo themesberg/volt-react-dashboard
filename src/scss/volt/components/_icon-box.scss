@@ -167,11 +167,25 @@
 
 .react-big-icon{
 	position: absolute;
-    right: 88px;
-    top: 233px;
+	right: 15px;
+	top: 390px;
+	@include media-breakpoint-up(sm) { 
+		right: -11px;
+		top: 307px;
+	}
+	@include media-breakpoint-up(md) { 
+		right: 88px;
+		top: 233px;
+	}
 	span{
-		font-size: 800px;
-    	opacity: .05;
+		font-size: 234px;
+		opacity: .05;
+		@include media-breakpoint-up(sm) { 
+			font-size: 380px;
+		}
+		@include media-breakpoint-up(md) { 
+			font-size: 800px;
+		}
 	}
 	svg{
 		font-size: 800px;
