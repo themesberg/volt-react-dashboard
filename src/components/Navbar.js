@@ -53,9 +53,6 @@ export default (props) => {
       <Container fluid className="px-0">
         <div className="d-flex justify-content-between w-100">
           <div className="d-flex align-items-center">
-            <Button id="sidebar-toggle" variant="icon-only" size="lg" className="sidebar-toggle btn-circle d-none d-md-inline-block me-3" onClick={toggleContracted}>
-              <FontAwesomeIcon icon={faBars} />
-            </Button>
             <Form className="navbar-search">
               <Form.Group id="topbarSearch">
                 <InputGroup className="input-group-merge search-bar">

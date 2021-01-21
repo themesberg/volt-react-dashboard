@@ -3,7 +3,7 @@ import React from "react";
 import moment from "moment-timezone";
 import { Row, Col, Card, OverlayTrigger, Tooltip, Image, Button } from '@themesberg/react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCogs, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faCogs, faDownload, faRocket, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import BS5Logo from "../assets/img/technologies/bootstrap-5-logo.svg";
 import ReactLogo from "../assets/img/technologies/react-logo.svg";
 
@@ -22,8 +22,9 @@ export default (props) => {
         <Card className="theme-settings">
           <Card.Body className="pt-4">
             <Button className="theme-settings-close" variant="close" size="sm" aria-label="Close" onClick={() => { toggleSettings(false) }} />
-            <Button href="https://themesberg.com/product/react-dashboard/volt-pro" target="_blank" variant="secondary" className="mb-3 w-100"><FontAwesomeIcon icon={faShoppingCart} className="me-1" /> Purchase now</Button>
-            <p className="fs-7 text-gray-700">Available in the following technologies:</p>
+            <Button href="https://themesberg.com/product/dashboard/volt-react" target="_blank" variant="primary" className="mb-3 w-100"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
+            <Button href="https://themesberg.com/product/dashboard/volt-pro-react" target="_blank" variant="secondary" className="mb-3 w-100"><FontAwesomeIcon icon={faRocket} className="me-1" /> Upgrade to Pro</Button>
+            <p className="fs-7 text-gray-700 text-center">Available in the following technologies:</p>
             <div className="d-flex justify-content-center">
               <Card.Link href="https://themesberg.com/product/admin-dashboard/volt-premium-bootstrap-5-dashboard" target="_blank">
                 <OverlayTrigger placement="top" trigger={['hover', 'focus']} overlay={<Tooltip>Bootstrap 5 · The most popular HTML, CSS, and JS library in the world.</Tooltip>}>
@@ -31,7 +32,7 @@ export default (props) => {
                 </OverlayTrigger>
               </Card.Link>
 
-              <Card.Link href="https://themesberg.com/product/react-dashboard/volt-pro" target="_blank">
+              <Card.Link href="https://themesberg.com/product/dashboard/volt-pro-react" target="_blank">
                 <OverlayTrigger placement="top" trigger={['hover', 'focus']} overlay={<Tooltip>React · A JavaScript library for building user interfaces.</Tooltip>}>
                   <Image src={ReactLogo} className="image image-xs" />
                 </OverlayTrigger>

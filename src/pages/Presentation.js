@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBook, faExternalLinkAlt, faCalendarAlt, faCodeBranch, faShoppingCart, faChartLine, faFolder, faMapMarkedAlt, faPager, faFileCode, faCheck, faBalanceScale } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faExternalLinkAlt, faCalendarAlt, faCodeBranch, faShoppingCart, faChartLine, faFolder, faMapMarkedAlt, faPager, faFileCode, faCheck, faBalanceScale, faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faBootstrap, faJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
 import { Col, Row, Card, Image, Button, Container, ListGroup, Tooltip, OverlayTrigger, Form, Navbar, Nav, Badge } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -83,7 +83,7 @@ export default () => {
         <Container className="position-relative justify-content-between px-3">
           <Navbar.Brand as={HashLink} to="#home" className="me-lg-3 d-flex align-items-center">
             <Image src={ReactHero} />
-            <span className="ms-2 brand-text">Volt React Pro</span>
+            <span className="ms-2 brand-text">Volt React</span>
           </Navbar.Brand>
 
           <div className="d-flex align-items-center">
@@ -91,13 +91,14 @@ export default () => {
               <Nav className="navbar-nav-hover align-items-lg-center">
                 <Nav.Link as={HashLink} to="#features">Features</Nav.Link>
                 <Nav.Link as={HashLink} to="#pages">Pages</Nav.Link>
-                <Nav.Link as={HashLink} to="#folder">Folder Structure</Nav.Link>
+                <Nav.Link as={HashLink} to="#folder" className="d-sm-none d-xl-inline">Folder Structure</Nav.Link>
                 <Nav.Link as={HashLink} to="#getting-started">Getting Started</Nav.Link>
+                <Nav.Link as={HashLink} to="#upgrade-to-pro">Upgrade to Pro</Nav.Link>
                 {/* <Nav.Link href="#free-demo" className="d-lg-none d-xl-inline">Free Demo</Nav.Link> */}
               </Nav>
             </Navbar.Collapse>
             <Button as={Link} to={Routes.DashboardOverview.path} variant="secondary" className="ms-3" target="_blank">Live Demo <FontAwesomeIcon icon={faExternalLinkAlt} className="ms-1" /></Button>
-            <Button as={HashLink} to="#pricing" variant="outline-white" className="ms-3 d-none d-sm-inline">Pricing plan</Button>
+            <Button as={HashLink} to="#pricing" variant="outline-white" className="ms-3 d-none d-sm-inline"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
           </div>
         </Container>
       </Navbar>
@@ -106,11 +107,9 @@ export default () => {
           <Row>
             <Col xs={12} className="text-center">
               <Image src={ReactHero} height={100} className="navbar-brand-dark mb-4" alt="Logo light" />
-              <h1 className="hero-title fw-bolder">
-                Volt React <span className="pixel-pro-badge fw-bolder text-dark">PRO</span>
-              </h1>
+              <h1 className="fw-bolder">Volt React Dashboard</h1>
               <h3 className="text-muted mb-5 h4">
-                Premium admin dashboard using Bootstrap 5
+                Open source admin dashboard using Bootstrap 5
               </h3>
               <div className="d-flex justify-content-center mb-6">
                 <Button variant="secondary" as={Link} to={Routes.DashboardOverview.path} className="text-dark me-3">
@@ -149,14 +148,14 @@ export default () => {
               <div className="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle icon-secondary mb-4">
                 <FontAwesomeIcon icon={faPager} />
               </div>
-              <h3 className="fw-bolder">22</h3>
+              <h3 className="fw-bolder">10</h3>
               <p className="text-gray">Example Pages</p>
             </Col>
             <Col xs={6} md={3} className="text-center mb-4">
               <div className="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle icon-secondary mb-4">
                 <FontAwesomeIcon icon={faReact} />
               </div>
-              <h3 className="fw-bolder">800+</h3>
+              <h3 className="fw-bolder">200+</h3>
               <p className="text-gray">React Components</p>
             </Col>
             <Col xs={6} md={3} className="text-center">
@@ -180,11 +179,11 @@ export default () => {
         <Container>
           <Row className="justify-content-between align-items-center mb-5 mb-lg-7">
             <Col lg={5} className="order-lg-2 mb-5 mb-lg-0">
-              <h1>Powered by React.js</h1>
+              <h2>Powered by React.js</h2>
               <p className="mb-3 lead fw-bold">The most popular front-end library in the world</p>
               <p className="mb-4">Volt React is an admin dashboard template that is built using React.js components using react hooks and a data-driven structure that can kick-start your app in no time.</p>
               <Button as={Link} to={Routes.DashboardOverview.path} variant="secondary" target="_blank">Live Demo <FontAwesomeIcon icon={faExternalLinkAlt} className="ms-1" /></Button>
-              <Button as={HashLink} to="#pricing" variant="outline-primary" className="ms-3"><FontAwesomeIcon icon={faShoppingCart} className="me-1" /> Pricing plan</Button>
+              <Button as={HashLink} to="#pricing" variant="outline-primary" className="ms-3"><FontAwesomeIcon icon={faShoppingCart} className="me-1" /> Download</Button>
             </Col>
             <Col lg={6} className="order-lg-1">
               <Image src={ReactMockupImg} alt="Calendar Preview" />
@@ -192,9 +191,9 @@ export default () => {
           </Row>
           <Row className="justify-content-between align-items-center mb-5 mb-lg-7">
             <Col lg={5}>
-              <h1>React.js Components</h1>
-              <p className="mb-3 lead fw-bold">800+ premium UI elements based on Bootstrap 5</p>
-              <p className="mb-4">We've built over 800 React.js powered components to be used throughout your application saving you time kickstarting your project.</p>
+              <h2>React.js Components</h2>
+              <p className="mb-3 lead fw-bold">200+ premium UI elements based on Bootstrap 5</p>
+              <p className="mb-4">We've built over 200 React.js powered components to be used throughout your application saving you time kickstarting your project.</p>
               <p className="mb-4">Check out the components and use our live React.js component editor to try the code.</p>
               <Button as={Link} to={Routes.Forms.path} variant="secondary" className="mb-5 mb-lg-0" target="_blank"><FontAwesomeIcon icon={faReact} className="me-1" /> Components examples</Button>
             </Col>
@@ -215,7 +214,7 @@ export default () => {
           </Row>
           <Row className="justify-content-between align-items-center mb-5 mb-lg-7">
             <Col lg={5} className="order-lg-2 mb-5 mb-lg-0">
-              <h1>Mapbox</h1>
+              <h2 className="d-flex align-items-center">Mapbox <Badge pill bg='secondary' text="dark" className="badge-md ms-3 mb-0 fs-6">Pro</Badge></h2>
               <p className="mb-3 lead fw-bold">Markers and cards integration with Leaflet.js</p>
               <p className="mb-4">You can use this map to add markers with custom cards and show them on a map using our custom MapBox integration with Leaflet.js</p>
               <Button as={Link} to={Routes.Map.path} className="me-3" variant="secondary" target="_blank"><FontAwesomeIcon icon={faMapMarkedAlt} className="me-2" /> Demo Map</Button>
@@ -227,7 +226,7 @@ export default () => {
           </Row>
           <Row className="justify-content-between align-items-center mb-5 mb-lg-7">
             <Col lg={5}>
-              <h1>Calendar</h1>
+              <h2 className="d-flex align-items-center">Calendar <Badge pill bg='secondary' text="dark" className="badge-md ms-3 mb-0 fs-6">Pro</Badge></h2>
               <p className="mb-3 lead fw-bold">
                 Advanced FullCalendar.js integration
               </p>
@@ -243,7 +242,7 @@ export default () => {
           </Row>
           <Row className="justify-content-between align-items-center">
             <Col lg={5} className="order-lg-2 mb-5 mb-lg-0">
-              <h1>Bootstrap 5</h1>
+              <h2>Bootstrap 5</h2>
               <p className="mb-3 lead fw-bold">
                 Latest version of Bootstrap 5
               </p>
@@ -261,9 +260,9 @@ export default () => {
         <Container>
           <Row className="justify-content-center mb-5 mb-lg-6">
             <Col xs={12} className="text-center">
-              <h1 className="px-lg-5">
+              <h2 className="px-lg-5">
                 20 hand-crafted pages
-              </h1>
+              </h2>
               <p className="lead px-lg-10">
                 Every page from Volt has been carefully built to provide all the necessary pages your startup will require
               </p>
@@ -278,7 +277,7 @@ export default () => {
         <Container>
           <Row className="justify-content-center mb-5 mb-lg-6">
             <Col xs={12} className="text-center">
-              <h1 className="px-lg-5">Awesome Features</h1>
+              <h2 className="px-lg-5">Awesome Features</h2>
               <p className="lead px-lg-8">You get all React.js components fully customized. Besides, you receive numerous plugins out of the box and ready to use.</p>
             </Col>
           </Row>
@@ -291,7 +290,7 @@ export default () => {
         <Container>
           <Row className="justify-content-center mb-5 mb-lg-6">
             <Col xs={12} className="text-center">
-              <h1 className="px-lg-5">What's inside?</h1>
+              <h2 className="px-lg-5">What's inside?</h2>
               <p className="lead px-lg-8">We have carefully crafted the perfect folder structure to ensure that finding the files you're looking for are easily reachable and well organized.</p>
             </Col>
           </Row>
@@ -338,9 +337,9 @@ export default () => {
         <Container>
           <Row className="justify-content-center text-center text-white mb-5">
             <Col xs={12}>
-              <h1 className="fw-light mb-3">
+              <h2 className="fw-light mb-3">
                 Less <span className="fw-bold">work</span>, more <span className="fw-bold">flow</span>.
-              </h1>
+              </h2>
               <p className="lead px-lg-8">
                 Boost productivity with BrowserSync. Sass changes are reflected instantly and pages scroll and refresh on devices as you work.
               </p>
@@ -410,7 +409,7 @@ export default () => {
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer className="bg-white border-0 pt-0 px-4 pb-4">
-                  <Card.Link as={Button} variant="secondary" href="https://themesberg.com/product/react-dashboard/volt-pro#pricing" target="_blank" className="w-100 text-dark rounded animate-up-2">
+                  <Card.Link as={Button} variant="secondary" href="https://themesberg.com/product/dashboard/volt-pro-react#pricing" target="_blank" className="w-100 text-dark rounded animate-up-2">
                     Buy now <span className="icon icon-xs ms-3" />
                   </Card.Link>
                 </Card.Footer>
@@ -454,7 +453,7 @@ export default () => {
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer className="bg-white border-0 pt-0 px-4 pb-4">
-                  <Card.Link as={Button} variant="primary" href="https://themesberg.com/product/react-dashboard/volt-pro#pricing" target="_blank" className="w-100 rounded animate-up-2">
+                  <Card.Link as={Button} variant="primary" href="https://themesberg.com/product/dashboard/volt-pro-react#pricing" target="_blank" className="w-100 rounded animate-up-2">
                     Buy now <span className="icon icon-xs ms-3" />
                   </Card.Link>
                 </Card.Footer>
@@ -498,7 +497,7 @@ export default () => {
                   </ListGroup>
                 </Card.Body>
                 <Card.Footer className="bg-white border-0 pt-0 px-4 pb-4">
-                  <Card.Link as={Button} variant="primary" href="https://themesberg.com/product/react-dashboard/volt-pro#pricing" target="_blank" className="w-100 rounded animate-up-2">
+                  <Card.Link as={Button} variant="primary" href="https://themesberg.com/product/dashboard/volt-pro-react#pricing" target="_blank" className="w-100 rounded animate-up-2">
                     Buy now <span className="icon icon-xs ms-3" />
                   </Card.Link>
                 </Card.Footer>
@@ -524,12 +523,11 @@ export default () => {
                   </OverlayTrigger>
                 </Card.Link>
 
-                <Card.Link href="https://themesberg.com/product/react-dashboard/volt-pro" target="_blank" className="me-3">
+                <Card.Link href="https://themesberg.com/product/dashboard/volt-pro-react" target="_blank" className="me-3">
                   <OverlayTrigger placement="top" trigger={['hover', 'focus']} overlay={<Tooltip>React · A JavaScript library for building user interfaces.</Tooltip>}>
                     <Image src={ReactLogo} className="image image-sm" />
                   </OverlayTrigger>
                 </Card.Link>
-
               </div>
             </Col>
           </Row>
@@ -621,7 +619,6 @@ export default () => {
               </Col>
             </Row>
           </Row>
-
         </Container>
       </section>
       <footer className="footer py-6 bg-dark text-white">

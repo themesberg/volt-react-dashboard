@@ -70,40 +70,11 @@ const RouteWithSidebar = ({ component: Component, ...rest }) => {
     return () => clearTimeout(timer);
   }, []);
 
-  const resize = () => {
-    var resize = setInterval(() => {
-      window.dispatchEvent(new Event('resize'));
-    }, 10);
-    setTimeout(function () {
-      clearInterval(resize);
-    }, 301);
-  }
-
-  const localStorageIsContracted = () => {
-    return localStorage.getItem('sidebarContracted') === 'false' ? false : true
-  }
-
   const localStorageIsSettingsVisible = () => {
     return localStorage.getItem('settingsVisible') === 'false' ? false : true
   }
 
-  const [contracted, setContracted] = useState(localStorageIsContracted());
-  const [contractSidebar, setContractSidebar] = useState(localStorageIsContracted());
   const [showSettings, setShowSettings] = useState(localStorageIsSettingsVisible);
-
-  const toggleMouseOver = () => {
-    if (contracted) {
-      setContractSidebar(!contractSidebar);
-    }
-    resize();
-  };
-
-  const toggleContracted = () => {
-    setContracted(!contracted);
-    setContractSidebar(!contracted);
-    localStorage.setItem('sidebarContracted', !contracted);
-    resize();
-  };
 
   const toggleSettings = () => {
     setShowSettings(!showSettings);
@@ -114,14 +85,10 @@ const RouteWithSidebar = ({ component: Component, ...rest }) => {
     <Route {...rest} render={props => (
       <>
         <Preloader show={loaded ? false : true} />
-        <Sidebar
-          contracted={contractSidebar}
-          onMouseEnter={toggleMouseOver}
-          onMouseLeave={toggleMouseOver}
-        />
+        <Sidebar />
 
         <main className="content">
-          <Navbar toggleContracted={toggleContracted} />
+          <Navbar />
           <Component {...props} />
           <Footer toggleSettings={toggleSettings} showSettings={showSettings} />
         </main>
