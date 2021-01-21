@@ -463,7 +463,7 @@ export default () => {
             <Col xs={12} className="text-center">
               <h2 className="h5 text-gray fw-normal mb-4">Available in the following technologies:</h2>
               <div>
-                <Card.Link href="https://themesberg.com/product/admin-dashboard/volt-dashboard" target="_blank" className="me-3">
+                <Card.Link href="https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard" target="_blank" className="me-3">
                   <OverlayTrigger placement="top" trigger={['hover', 'focus']} overlay={<Tooltip>Bootstrap 5 · The most popular HTML, CSS, and JS library in the world.</Tooltip>}>
                     <Image src={BS5Logo} className="image image-sm" />
                   </OverlayTrigger>
