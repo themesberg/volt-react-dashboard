@@ -1,0 +1,75 @@
+/*
+* = Buttons
+*/
+
+.btn {
+    &.btn-circle {
+        border-radius: $circle-radius;
+    }
+
+    &.btn-md {
+        padding: 0.65rem 1.25rem;
+    }
+
+    &.btn-xs {
+        padding  : 0.175rem 0.45rem;
+        font-size: 0.7rem;
+    }
+}
+
+.btn-icon-only {
+    width  : 2.575rem;
+    height : 2.575rem;
+    padding: 0;
+    @include display-flex();
+    @include justify-content(center);
+    @include align-items(center);
+
+    &.btn-xs {
+        width : 1.7rem;
+        height: 1.7rem;
+    }
+
+    &.btn-sm {
+        width : 2rem;
+        height: 2rem;
+    }
+}
+
+
+//
+// Block button
+//
+
+.btn-block {
+    display: block;
+    width  : 100%;
+
+    // Vertically space out multiple block buttons
+    +.btn-block {
+        margin-top: $btn-block-spacing-y;
+    }
+}
+
+.copy-code-button {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    background-color: transparent;
+    color: $gray-600;
+    border: 0;
+    box-shadow: none;
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+        border: 0;
+        box-shadow: none;
+    }
+}
+
+.copy-code-text {
+    position: absolute;
+    top: 24px;
+    right: 90px;
+}

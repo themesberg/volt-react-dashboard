@@ -1,0 +1,104 @@
+{
+  "plain": {
+    "color": "#393A34",
+    "backgroundColor": "#fff"
+  },
+  "styles": [
+    {
+      "types": [
+        "comment",
+        "prolog",
+        "doctype",
+        "cdata"
+      ],
+      "style": {
+        "color": "rgb(153,153,136)",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "types": [
+        "string",
+        "attr-value"
+      ],
+      "style": {
+        "color": "rgb(201,100,128)"
+      }
+    },
+    {
+      "types": [
+        "punctuation",
+        "operator"
+      ],
+      "style": {
+        "color": "rgb(57,58,52)"
+      }
+    },
+    {
+      "types": [
+        "entity",
+        "url",
+        "symbol",
+        "number",
+        "boolean",
+        "variable",
+        "constant",
+        "property",
+        "regex",
+        "inserted"
+      ],
+      "style": {
+        "color": "rgb(54,172,170)"
+      }
+    },
+    {
+      "types": [
+        "atrule",
+        "keyword",
+        "attr-name",
+        "selector"
+      ],
+      "style": {
+        "color": "rgb(0,164,219)"
+      }
+    },
+    {
+      "types": [
+        "function",
+        "deleted",
+        "tag"
+      ],
+      "style": {
+        "color": "rgb(154,5,15)"
+      }
+    },
+    {
+      "types": [
+        "tag",
+        "selector",
+        "keyword"
+      ],
+      "style": {
+        "color": "rgb(0,0,159)"
+      }
+    },
+    {
+      "types": [
+        "important",
+        "function",
+        "bold"
+      ],
+      "style": {
+        "fontWeight": "bold"
+      }
+    },
+    {
+      "types": [
+        "italic"
+      ],
+      "style": {
+        "fontStyle": "italic"
+      }
+    }
+  ]
+}

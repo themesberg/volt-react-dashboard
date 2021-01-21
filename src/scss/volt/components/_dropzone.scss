@@ -1,0 +1,52 @@
+.dropzone {
+    min-height: 150px;
+    border: 2px dashed $gray-600;
+    background: $white;
+    cursor: pointer;
+    &:hover{
+        background-color: $soft;
+    }
+    .dz-message{
+        .dz-button{
+            font-size:$font-size-lg;
+            font-weight:$font-weight-bold;
+        }
+    }
+}
+
+.dropzone-files {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.dropzone-preview {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 100px;
+}
+
+.dropzone-image {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+
+.dropzone-filename {
+    white-space: normal;
+    padding: 0 0.4em;
+    margin: 5px 0 5px 0;
+    border-radius: 3px;
+}
+
+.dropzone-filename:not(:hover) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

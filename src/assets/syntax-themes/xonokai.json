@@ -1,0 +1,121 @@
+{
+  "plain": {
+    "color": "#76d9e6",
+    "backgroundColor": "#2a2a2a"
+  },
+  "styles": [
+    {
+      "types": [
+        "comment",
+        "prolog",
+        "doctype",
+        "cdata"
+      ],
+      "style": {
+        "color": "rgb(111,112,94)"
+      }
+    },
+    {
+      "types": [
+        "operator",
+        "boolean",
+        "number"
+      ],
+      "style": {
+        "color": "rgb(167,122,254)"
+      }
+    },
+    {
+      "types": [
+        "attr-value",
+        "string"
+      ],
+      "style": {
+        "color": "rgb(230,208,108)"
+      }
+    },
+    {
+      "types": [
+        "entity",
+        "url",
+        "string"
+      ],
+      "style": {
+        "color": "rgb(230,208,108)"
+      }
+    },
+    {
+      "types": [
+        "selector",
+        "inserted"
+      ],
+      "style": {
+        "color": "rgb(166,226,45)"
+      }
+    },
+    {
+      "types": [
+        "atrule",
+        "attr-name",
+        "keyword",
+        "important",
+        "deleted"
+      ],
+      "style": {
+        "color": "rgb(239,59,125)"
+      }
+    },
+    {
+      "types": [
+        "regex",
+        "statement"
+      ],
+      "style": {
+        "color": "rgb(118,217,230)"
+      }
+    },
+    {
+      "types": [
+        "placeholder",
+        "variable"
+      ],
+      "style": {
+        "color": "rgb(255,255,255)"
+      }
+    },
+    {
+      "types": [
+        "important",
+        "statement",
+        "bold"
+      ],
+      "style": {
+        "fontWeight": "bold"
+      }
+    },
+    {
+      "types": [
+        "punctuation"
+      ],
+      "style": {
+        "color": "rgb(190,190,197)"
+      }
+    },
+    {
+      "types": [
+        "entity"
+      ],
+      "style": {
+        "cursor": "help"
+      }
+    },
+    {
+      "types": [
+        "italic"
+      ],
+      "style": {
+        "fontStyle": "italic"
+      }
+    }
+  ]
+}

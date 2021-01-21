@@ -1,0 +1,33 @@
+.rdtPicker{
+  .dow {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bolder;
+  }
+  td{
+    height: 35px !important;
+    &.rdtActive{
+      background-color: $secondary !important;
+      color: $dark !important;
+      border-radius: $border-radius ;
+      text-shadow: none !important;
+    }
+    &.rdtDay{
+      &:hover{
+        border-radius: $border-radius ;
+      }
+    }
+    &.rdtToday{
+      background-color: $light;
+      border-radius: $border-radius;
+      &::before{
+        border-bottom: 7px solid $secondary;
+      }
+    }
+  }
+  th{
+    border-bottom:0 !important;
+  }
+}
+
