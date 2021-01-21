@@ -83,7 +83,7 @@ export default () => {
         <Container className="position-relative justify-content-between px-3">
           <Navbar.Brand as={HashLink} to="#home" className="me-lg-3 d-flex align-items-center">
             <Image src={ReactHero} />
-            <span className="ms-2 brand-text">Volt React</span>
+            <span className="ms-2 brand-text d-none d-md-inline">Volt React</span>
           </Navbar.Brand>
 
           <div className="d-flex align-items-center">
@@ -96,20 +96,19 @@ export default () => {
                 <Nav.Link as={HashLink} to="#download">Upgrade to Pro</Nav.Link>
               </Nav>
             </Navbar.Collapse>
-            <Button as={Link} to={Routes.DashboardOverview.path} variant="secondary" className="ms-3" target="_blank">Live Demo <FontAwesomeIcon icon={faExternalLinkAlt} className="ms-1" /></Button>
             <Button as={HashLink} to="#download" variant="outline-white" className="ms-3 d-none d-sm-inline"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
           </div>
         </Container>
       </Navbar>
-      <section className="section-header pt-lg-7 pb-9 pb-lg-12 bg-primary text-white" id="home">
+      <section className="section-header pt-5 pt-lg-6 pb-9 pb-lg-12 bg-primary text-white" id="home">
         <Container>
           <Row>
             <Col xs={12} className="text-center">
               <h1 className="fw-bolder text-secondary">Volt React Dashboard</h1>
-              <p className="text-muted fw-light mb-5 h5 px-lg-12">Open source powered by React.js and Bootstrap 5</p>
-              <div className="d-flex justify-content-center align-items-center mb-6">
-                <Button variant="secondary" as={Link} to={Routes.DashboardOverview.path} className="text-dark me-3">
-                  <FontAwesomeIcon icon={faChartLine} className="d-none d-sm-inline me-2" /> Dashboard Demo
+              <p className="text-muted fw-light mb-4 h5 px-lg-12">Open source powered by React.js and Bootstrap 5</p>
+              <div className="d-flex justify-content-center align-items-center mb-5">
+                <Button variant="secondary" as={Link} to={Routes.DashboardOverview.path} size='lg' className="text-dark me-3">
+                 Live Demo <FontAwesomeIcon icon={faExternalLinkAlt} className="d-none d-sm-inline ms-1" />
                 </Button>
                 <GitHubButton href="https://github.com/themesberg/volt-react-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
               </div>
