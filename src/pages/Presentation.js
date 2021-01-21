@@ -100,11 +100,11 @@ export default () => {
           </div>
         </Container>
       </Navbar>
-      <section className="section-header pt-5 pt-lg-6 pb-9 pb-lg-12 bg-primary text-white" id="home">
+      <section className="section-header overflow-hidden pt-5 pt-lg-6 pb-9 pb-lg-12 bg-primary text-white" id="home">
         <Container>
           <Row>
             <Col xs={12} className="text-center">
-              <div className="react-big-icon"><span className="fab fa-react"></span></div>
+              <div className="react-big-icon d-none d-lg-block"><span className="fab fa-react"></span></div>
               <h1 className="fw-bolder text-secondary">Volt React Dashboard</h1>
               <p className="text-muted fw-light mb-5 h5">Open source powered by React.js and Bootstrap 5</p>
               <div className="d-flex align-items-center justify-content-center">
@@ -113,7 +113,7 @@ export default () => {
                 </Button>
                 <GitHubButton className="mt-lg-2" href="https://github.com/themesberg/volt-react-dashboard" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
               </div>
-              <div className="d-flex justify-content-center flex-column mb-6 mt-5">
+              <div className="d-flex justify-content-center flex-column mb-5 mb-lg-6 mt-5">
                 <div className="text-center mb-6">
                   <a href="https://themesberg.com" target="_blank">
                     <Image src={ThemesbergLogoIcon} height={25} width={25} className="mb-3" alt="Themesberg Logo" />

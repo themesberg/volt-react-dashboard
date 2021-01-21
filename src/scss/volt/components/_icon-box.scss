@@ -2,73 +2,84 @@
  * = Icon boxes
  */
 
-.icon-box{
-	padding: $icon-box-padding;
+.icon-box {
+	padding : $icon-box-padding;
 	position: relative;
-	
-	.icon-box-body{
+
+	.icon-box-body {
 		position: relative;
 	}
-	
+
 }
 
 .icon {
 	text-align: center;
-	display: inline-flex;
+	display   : inline-flex;
 	@include align-items(center);
 	@include justify-content(center);
 
-	span, svg {
+	span,
+	svg {
 		font-size: $icon-size;
 	}
 
-	&.icon-small{
-		span,svg{
+	&.icon-small {
+
+		span,
+		svg {
 			font-size: 0.675rem;
 		}
 	}
 
-	&.icon-xs{
-		span, svg {
+	&.icon-xs {
+
+		span,
+		svg {
 			font-size: $icon-size-xs;
 		}
 	}
 
-	&.icon-sm{
-		span, svg {
+	&.icon-sm {
+
+		span,
+		svg {
 			font-size: $icon-size-sm;
 		}
 	}
 
-	&.icon-lg{
-		span, svg {
+	&.icon-lg {
+
+		span,
+		svg {
 			font-size: $icon-size-lg;
 		}
-		svg{
+
+		svg {
 			height: 2rem;
 		}
 	}
 
-	&.icon-xl{
-		span{
+	&.icon-xl {
+		span {
 			font-size: $icon-size-xl;
 		}
-		svg{
+
+		svg {
 			height: 3.5rem;
 		}
 	}
 
-	&.w-20{
+	&.w-20 {
 		width: 20px;
 	}
 
-	&.w-30{
+	&.w-30 {
 		width: 30px;
 	}
 
-	&.rounded-circle{
-		.icon-bordered{
-			border-radius:$circle-radius;
+	&.rounded-circle {
+		.icon-bordered {
+			border-radius: $circle-radius;
 		}
 	}
 
@@ -76,37 +87,44 @@
 
 // Icons included in shapes
 .icon-shape {
-	width: $icon-shape;
-	height: $icon-shape;
-	text-align: center;
-	display: inline-flex;
-	align-items: center;
+	width          : $icon-shape;
+	height         : $icon-shape;
+	text-align     : center;
+	display        : inline-flex;
+	align-items    : center;
 	justify-content: center;
 
-	span, svg {
+	span,
+	svg {
 		font-size: $icon-size;
 	}
 
 	&.icon-xs {
-		width: $icon-shape-xs;
+		width : $icon-shape-xs;
 		height: $icon-shape-xs;
-		span, svg {
+
+		span,
+		svg {
 			font-size: $icon-size-xs;
 		}
 	}
 
 	&.icon-sm {
-		width: $icon-shape-sm;
+		width : $icon-shape-sm;
 		height: $icon-shape-sm;
-		span, svg {
+
+		span,
+		svg {
 			font-size: $icon-size-sm;
 		}
 	}
-	
-	&.icon-lg{
-		width: $icon-shape-lg;
+
+	&.icon-lg {
+		width : $icon-shape-lg;
 		height: $icon-shape-lg;
-		span, svg {
+
+		span,
+		svg {
 			font-size: $icon-size-md;
 		}
 	}
@@ -114,81 +132,75 @@
 
 //Icon Parallax
 .image-shape {
-    width: $icon-shape-img;
-	height: $icon-shape-img;
+	width   : $icon-shape-img;
+	height  : $icon-shape-img;
 	position: relative;
-	@include icon-image-background(center, cover, no-repeat); 
-    span {
-        font-size: $icon-size;
-		z-index: 1;
+	@include icon-image-background(center, cover, no-repeat);
+
+	span {
+		font-size: $icon-size;
+		z-index  : 1;
 	}
-	&.icon-parallax{
-		@include icon-parallax-background(center, cover, fixed, no-repeat); 
-		overflow: hidden;
+
+	&.icon-parallax {
+		@include icon-parallax-background(center, cover, fixed, no-repeat);
+		overflow         : hidden;
 		background-repeat: no-repeat;
 	}
 }
 
-.list-icon{
+.list-icon {
 	width: 45px;
 }
- 
+
 
 .shape-xs {
-    width: 10px;
-    height: 10px;
+	width : 10px;
+	height: 10px;
 }
 
 //Calendar Icon
 
-.icon-badge{
-	display: inline-block;
-    position: absolute;
-    top: -11px;
-    right: 6px;
-    height: 7px;
-    width: 7px;
-    background-color: $danger;
+.icon-badge {
+	display         : inline-block;
+	position        : absolute;
+	top             : -11px;
+	right           : 6px;
+	height          : 7px;
+	width           : 7px;
+	background-color: $danger;
 }
 
-.github-big-icon{
+.github-big-icon {
 	position: absolute;
-    right: 200px;
-    top: 165px;
-	span{
+	right   : 200px;
+	top     : 165px;
+
+	span {
 		font-size: 800px;
-    	opacity: .1;
+		opacity  : .1;
 	}
-	svg{
+
+	svg {
 		font-size: 800px;
-    	opacity: .1;
+		opacity  : .1;
 	}
 }
 
-.react-big-icon{
+.react-big-icon {
 	position: absolute;
-	right: 15px;
-	top: 390px;
-	@include media-breakpoint-up(sm) { 
-		right: -11px;
-		top: 307px;
-	}
-	@include media-breakpoint-up(md) { 
-		right: 88px;
-		top: 233px;
-	}
-	span{
-		font-size: 234px;
-		opacity: .05;
-		@include media-breakpoint-up(sm) { 
-			font-size: 380px;
-		}
-		@include media-breakpoint-up(md) { 
-			font-size: 800px;
-		}
-	}
-	svg{
+	opacity: .05;
+
+	@include media-breakpoint-up(lg) {
+		right: -35%;
+		bottom: -30%;
 		font-size: 800px;
-    	opacity: .1;
 	}
+
+	@include media-breakpoint-up(xl) {
+		right: -15%;
+		bottom  : -35%;
+		font-size: 800px;
+	}
+
 }
