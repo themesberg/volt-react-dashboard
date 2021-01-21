@@ -1,77 +1,205 @@
-Check out the official product page for [Volt Pro React Dashboard on Themesberg](https://themesberg.com/product/dashboard/volt-pro-react).
+# [Volt React Dashboard Bootstrap 5](https://demo.themesberg.com/volt-react-dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fthemesberg%2Fvolt-bootstrap-5-dashboard&via=themesberg&text=Volt%20-%20Open%20Source%20Bootstrap%205%20Admin%20Dashboard)
 
-[![Volt Pro React Dashboard](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-pro-react-dashboard/thumbnail.png)](https://themesberg.com/product/dashboard/volt-pro-react)
+[![version](https://img.shields.io/npm/v/@themesberg/volt-bootstrap-5-dashboard)](https://www.npmjs.com/package/@themesberg/volt-bootstrap-5-dashboard)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
+[![GitHub issues open](https://img.shields.io/github/issues/themesberg/volt-bootstrap-5-dashboard.svg)](https://github.com/themesberg/volt-bootstrap-5-dashboard/issues?q=is%3Aopen+is%3Aissue)
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/themesberg/volt-bootstrap-5-dashboard.svg)](https://github.com/themesberg/volt-bootstrap-5-dashboard/issues?q=is%3Aissue+is%3Aclosed)
 
-## Getting started
+[![Volt React Dashboard Bootstrap 5](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-react-dashboard/thumbnail.png)](https://demo.themesberg.com/volt-react-dashboard)
 
-Make sure you have yarn installed. Run `brew install yarn`.
+Volt React is a free and open source admin dashboard template built in React.js and based on the latest version of the Bootstrap 5 CSS framework. It features over 200 UI elements, plugins, and example based built with React components.
 
-- Step 1: Run `yarn install`
-- Step 2: Run `yarn start` and go to `http://localhost:3000`
+## Powered by React.js
 
-## Available Scripts
+Volt React is an extension of the popular [react-bootstrap](https://react-bootstrap.github.io/) library and it is based on the newest version of Bootstrap 5. 
 
-In the project directory, you can run:
+## Data-driven
 
-### `yarn start`
+This library has been built using a data driven methodology, meaning that a large part of data, such as tasks, messages, user notifications are passed to the components as an array of objects. This will make it easy to connect the UI interface with any back-end API.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Bootstrap 5
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This library is based on the latest version of the [Bootstrap 5 CSS framework](https://getbootstrap.com/) which brought many improvements, such as [dropping dependency on jQuery](https://themesberg.com/blog/tutorial/bootstrap-5-tutorial), introducing RTL support, the utility API and many other style and markup improvements.
 
-### `yarn test`
+## Over 200 React Components
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Volt React included over 200 React UI elements such as buttons, form elements, alerts, modals, tabs, navigation bars, date pickers, and many more. They are all custom styled by professional designers as an extension of the base Bootstrap elements using Sass variables, mixins, and custom markup.
 
-### `yarn build`
+## 10 Example Dashboard Pages
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Get started with 10 beautiful example pages for a dashboard which is based on the most popular dashboard template written in Bootstrap 5, called [Volt Dashboard](https://github.com/themesberg/volt-bootstrap-5-dashboard).
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Getting Started and live code editor
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Every component, plugin and getting started is thoroughly documented on our [online documentation](#).
 
-### `yarn eject`
+## Workflow
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This product is built using the following widely used technologies:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React.js front-end library
+- Bootstrap 5 CSS Framework
+- Sass preprocessing language
+- NPM & Yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Table of Contents
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* [Demo](#demo)
+* [Quick Start](#quick-start)
+* [Documentation](#documentation)
+* [File Structure](#file-structure)
+* [Browser Support](#browser-support)
+* [Resources](#resources)
+* [Upgrade to PRO](#upgrade-to-pro)
+* [Reporting Issues](#reporting-issues)
+* [Technical Support or Questions](#technical-support-or-questions)
+* [Licensing](#licensing)
+* [Useful Links](#useful-links)
 
-## Learn More
+## Demo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Dashboard | Transactions | Settings | Forms |
+| --- | --- | --- | --- |
+| [![Dashboard](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/dashboard.jpg)](https://demo.themesberg.com/volt/pages/dashboard/dashboard.html) | [![Transactions](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/transactions.jpg)](https://demo.themesberg.com/volt/pages/transactions.html) | [![Settings](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/settings.jpg)](https://demo.themesberg.com/volt/pages/settings.html) | [![Forms](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/forms.jpg)](https://demo.themesberg.com/volt/pages/components/forms.html)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Sign in | Sign up | Forgot password | Reset password |
+| --- | --- | --- | --- |
+| [![Sign in](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/signin.jpg)](https://demo.themesberg.com/volt/pages/examples/sign-in.html) | [![Sign up](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/signup.jpg)](https://demo.themesberg.com/volt/pages/examples/sign-up.html) | [![Forgot Password](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/forgot-password.jpg)](https://demo.themesberg.com/volt/pages/examples/forgot-password.html) | [![Reset password](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/reset-password.jpg)](https://demo.themesberg.com/volt/pages/examples/reset-password.html)
 
-### Code Splitting
+| Lock Profile | 404 Not Found | 500 Server Error | Documentation |
+| --- | --- | --- | --- |
+| [![Lock Profile](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/lock.jpg)](https://demo.themesberg.com/volt/pages/examples/lock.html) | [![404 Not Found](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/404.jpg)](https://demo.themesberg.com/volt/pages/examples/404.html) | [![500 Server Error](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/500.jpg)](https://demo.themesberg.com/volt/pages/examples/500.html) | [![Documentation](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-bootstrap-5-dashboard/github/docs.jpg)](https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/quick-start/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+-   [Live Demo](https://demo.themesberg.com/volt-react-dashboard)
+-   [Download](https://themesberg.com/product/dashboard/volt-react)
 
-### Analyzing the Bundle Size
+## Quick start
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+1. Register and Download from [Themesberg](https://themesberg.com/product/dashboard/volt-react) or clone this repository
+2. Download the project's zip
 
-### Making a Progressive Web App
+### Using Yarn
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+a.1 Make sure you have [Yarn](https://yarnpkg.com/) installed.
+a.2. After installing `yarn`, open a terminal and run `yarn install` in the main volt folder to download all project dependencies.
 
-### Advanced Configuration
+```
+yarn install
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+a.3. Then start the app in development mode by running the following command in terminal:
 
-### Deployment
+```
+yarn start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+a.4. Open http://localhost:3000 to view it in the browser. Any changes you make to the code will be automatically reflected in the browser.
 
-### `yarn build` fails to minify
+### Using NPM
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+b.1. Make sure you have [Node.js](https://nodejs.org/en/) installed. Make sure the installed Node version is >= 8.10 and of npm >= 5.6
+
+b.2. After installing Node.js, open a terminal and run `npm install` in the main `volt-react-dashboard/` folder to download all project dependencies. You'll find them in the `node_modules/` folder.
+
+```
+npm install
+```
+
+b.3. Then start the app in development mode by running the following command in terminal:
+
+```
+npm run start
+```
+
+b.4. Open http://localhost:3000 to view it in the browser. Any changes you make to the code will be automatically reflected in the browser.
+
+## Documentation
+The documentation for Volt is hosted on our [website](https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/quick-start/).
+
+## File Structure
+Within the download you'll find the following directories and files:
+
+```
+Volt Bootstrap 5 Admin Dashboard
+.
+├── README.md
+├── gulpfile.js
+├── package-lock.json
+├── package.json
+└── src
+    ├── assets
+    │   ├── img
+    │   └── js
+    ├── index.html
+    ├── pages
+    │   ├── components
+    │   ├── dashboard
+    │   ├── examples
+    │   ├── settings.html
+    │   ├── tables
+    │   └── transactions.html
+    ├── partials
+    │   ├── _analytics.html
+    │   ├── _footer.html
+    │   ├── _head.html
+    │   ├── _navigation.html
+    │   ├── _pages-preview.html
+    │   ├── _preloader.html
+    │   ├── _scripts.html
+    │   └── dashboard
+    └── scss
+        ├── volt
+        └── volt.scss
+```
+
+## Browser Support
+
+At present, we officially aim to support the last two versions of the following browsers:
+
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+
+## Resources
+- Demo: <https://demo.themesberg.com/volt/>
+- Download Page: <https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard>
+- Documentation: <https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/quick-start/>
+- License Agreement: <https://themesberg.com/licensing>
+- Support: <https://themesberg.com/contact>
+- Issues: [Github Issues Page](https://github.com/themesberg/volt-bootstrap-5-dashboard/issues)
+
+## Upgrade to Pro
+
+There is also a pro version of Volt which has more than 800 components, 20 example pages and over 10 advanced plugins that can take your admin dashboard application to the next level. Check out [Volt Pro Premium Bootstrap 5 Admin Dashboard](https://themesberg.com/product/admin-dashboard/volt-premium-bootstrap-5-dashboard).
+
+## Reporting Issues
+
+We use GitHub Issues as the official bug tracker for Volt Bootstrap 5 Admin Dashboard. Here are some advices for our users that want to report an issue:
+
+1. Make sure that you are using the latest version of Volt Bootstrap 5 Admin Dashboard. Check the CHANGELOG from your dashboard on our [website](https://themesberg.com/docs/volt-bootstrap-5-dashboard/getting-started/changelog/).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+
+## Technical Support or Questions
+
+If you have questions or need help integrating the product please [contact us](https://themesberg.com/contact) instead of opening an issue.
+
+## Licensing
+
+- Copyright 2020 Themesberg (Crafty Dwarf LLC) (https://themesberg.com)
+- Themesberg [license](https://themesberg.com/licensing#mit) (MIT License)
+
+## Useful Links
+
+- [More themes](https://themesberg.com/themes) from Themesberg
+- [Free themes](https://themesberg.com/templates/free) from Themesberg
+- [Bootstrap Themes, Templates & UI Kits](https://themesberg.com/templates/bootstrap) from Themesberg
+- [Affiliate Program](https://themesberg.com/affiliate)
+
+##### Social Media
+
+Twitter: <https://twitter.com/themesberg>
+
+Facebook: <https://www.facebook.com/themesberg/>
+
+Dribbble: <https://dribbble.com/themesberg>
+
+Instagram: <https://www.instagram.com/themesberg/>
