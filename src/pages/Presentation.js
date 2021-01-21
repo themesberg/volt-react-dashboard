@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBook, faExternalLinkAlt, faCalendarAlt, faCodeBranch, faShoppingCart, faChartLine, faFolder, faMapMarkedAlt, faPager, faFileCode, faCheck, faBalanceScale, faDownload } from "@fortawesome/free-solid-svg-icons";
-import { faBootstrap, faJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
+import { faBook, faExternalLinkAlt, faTimesCircle, faCheckCircle, faCalendarAlt, faCodeBranch, faShoppingCart, faChartLine, faFolder, faMapMarkedAlt, faPager, faFileCode, faCheck, faBalanceScale, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faBootstrap, faGithub, faJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
 import { Col, Row, Card, Image, Button, Container, ListGroup, Tooltip, OverlayTrigger, Form, Navbar, Nav, Badge } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
@@ -93,11 +93,11 @@ export default () => {
                 <Nav.Link as={HashLink} to="#pages">Pages</Nav.Link>
                 <Nav.Link as={HashLink} to="#folder" className="d-sm-none d-xl-inline">Folder Structure</Nav.Link>
                 <Nav.Link as={HashLink} to="#getting-started">Getting Started</Nav.Link>
-                <Nav.Link as={HashLink} to="#upgrade-to-pro">Upgrade to Pro</Nav.Link>
+                <Nav.Link as={HashLink} to="#download">Upgrade to Pro</Nav.Link>
               </Nav>
             </Navbar.Collapse>
             <Button as={Link} to={Routes.DashboardOverview.path} variant="secondary" className="ms-3" target="_blank">Live Demo <FontAwesomeIcon icon={faExternalLinkAlt} className="ms-1" /></Button>
-            <Button as={HashLink} to="#pricing" variant="outline-white" className="ms-3 d-none d-sm-inline"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
+            <Button as={HashLink} to="#download" variant="outline-white" className="ms-3 d-none d-sm-inline"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
           </div>
         </Container>
       </Navbar>
@@ -177,7 +177,7 @@ export default () => {
               <p className="mb-3 lead fw-bold">The most popular front-end library in the world</p>
               <p className="mb-4">Volt React is an admin dashboard template that is built using React.js components using react hooks and a data-driven structure that can kick-start your app in no time.</p>
               <Button as={Link} to={Routes.DashboardOverview.path} variant="secondary" target="_blank">Live Demo <FontAwesomeIcon icon={faExternalLinkAlt} className="ms-1" /></Button>
-              <Button as={HashLink} to="#pricing" variant="outline-primary" className="ms-3"><FontAwesomeIcon icon={faShoppingCart} className="me-1" /> Download</Button>
+              <Button as={HashLink} to="#download" variant="outline-primary" className="ms-3"><FontAwesomeIcon icon={faShoppingCart} className="me-1" /> Download</Button>
             </Col>
             <Col lg={6} className="order-lg-1">
               <Image src={ReactMockupImg} alt="Calendar Preview" />
@@ -365,153 +365,105 @@ export default () => {
           </Row>
         </Container>
       </section>
-      <section className="section bg-white">
-        <Container id="pricing">
-          <Row className="justify-content-center mb-6">
-            <Col xs={12} lg={9} className="text-center">
-              <h2 className="display-3 fw-light mb-4">Choose the right plan for your business</h2>
-              <p className="lead">You have at least <span className="fw-bold text-primary">Free 6 Months of Updates</span> and <span className="fw-bold text-primary">Premium Support</span> on each package. You also have 30 days to request a refund if you're not happy with your purchase.</p>
-            </Col>
-          </Row>
-          <Row className="mb-4 mb-lg-5">
-            <Col xs={12} lg={6} xl={4} className="mb-5">
-              <Card border="light" className="rounded-md mb-3 px-2">
-                <Card.Header className="bg-white border-light p-4">
-                  <div className="d-flex mb-3"> <span className="h5 mb-0">$</span> <span className="price display-2 mb-0 text-primary">89</span> </div>
-                  <h4 className="mb-3 text-black">Freelancer</h4>
-                  <p className="fw-normal font-small mb-0">
-                    Great for personal use and for your side projects.
-                    </p>
-                </Card.Header>
-                <Card.Body className="py-4">
-                  <ListGroup className="simple-list">
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Full documentation
-                      </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Domains: <strong>1</strong>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Team size: <strong>1 developer</strong>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Premium support: <strong>6 months</strong>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Free updates: <strong>6 months</strong>
-                    </ListGroup.Item>
-                  </ListGroup>
-                </Card.Body>
-                <Card.Footer className="bg-white border-0 pt-0 px-4 pb-4">
-                  <Card.Link as={Button} variant="secondary" href="https://themesberg.com/product/dashboard/volt-pro-react#pricing" target="_blank" className="w-100 text-dark rounded animate-up-2">
-                    Buy now <span className="icon icon-xs ms-3" />
-                  </Card.Link>
-                </Card.Footer>
-              </Card>
-              <OverlayTrigger
-                placement="bottom"
-                trigger={['hover', 'focus']}
-                overlay={<Tooltip>Something unclear? Click to read the full Freelancer License.</Tooltip>}
-              >
-                <Card.Link href="https://themesberg.com/licensing#freelancer" target="_blank" className="font-small text-gray text-center d-block mt-4">
-                  <FontAwesomeIcon icon={faBalanceScale} className="me-2" /> Freelancer License
-                  </Card.Link>
-              </OverlayTrigger>
-            </Col>
-            <Col xs={12} lg={6} xl={4} className="mb-5">
-              <Card border="light" className="rounded-md mb-3 px-2">
-                <Card.Header className="bg-white border-light p-4">
-                  <div className="d-flex mb-3"> <span className="h5 mb-0">$</span> <span className="price display-2 mb-0 text-primary">189</span> </div>
-                  <h4 className="mb-3 text-black">Company</h4>
-                  <p className="fw-normal font-small mb-0">
-                    Relevant for multiple users and extended support.
-                    </p>
-                </Card.Header>
-                <Card.Body className="py-4">
-                  <ListGroup className="list-group simple-list">
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Full documentation
-                      </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Domains: <strong>Unlimited</strong>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Team size: <strong>1-5 developers</strong>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Premium support: <strong>12 months</strong>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Free updates: <strong>12 months</strong>
-                    </ListGroup.Item>
-                  </ListGroup>
-                </Card.Body>
-                <Card.Footer className="bg-white border-0 pt-0 px-4 pb-4">
-                  <Card.Link as={Button} variant="primary" href="https://themesberg.com/product/dashboard/volt-pro-react#pricing" target="_blank" className="w-100 rounded animate-up-2">
-                    Buy now <span className="icon icon-xs ms-3" />
-                  </Card.Link>
-                </Card.Footer>
-              </Card>
-              <OverlayTrigger
-                placement="bottom"
-                trigger={['hover', 'focus']}
-                overlay={<Tooltip>Something unclear? Click to read the full Company License.</Tooltip>}
-              >
-                <Card.Link href="https://themesberg.com/licensing#company" target="_blank" className="font-small text-gray text-center d-block mt-4">
-                  <FontAwesomeIcon icon={faBalanceScale} className="me-2" /> Company License
-                  </Card.Link>
-              </OverlayTrigger>
-            </Col>
-            <Col xs={12} lg={6} xl={4} className="mb-5">
-              <Card border="light" className="rounded-md mb-3 px-2">
-                <Card.Header className="card-header bg-white border-light p-4">
-                  <div className="d-flex mb-3"> <span className="h5 mb-0">$</span> <span className="price display-2 mb-0 text-primary">799</span></div>
-                  <h3 className="h4 mb-3 text-black">Enterprise</h3>
-                  <p className="fw-normal font-small mb-0">
-                    Best for large scale uses and extended redistribution rights.
-                    </p>
-                </Card.Header>
-                <Card.Body className="py-4">
-                  <ListGroup className="simple-list">
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Full documentation
-                        </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Domains: <strong>Unlimited</strong>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Team size: <strong>5-15</strong>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Premium support: <strong>24 months</strong>
-                    </ListGroup.Item>
-                    <ListGroup.Item className="fw-normal border-0">
-                      <FontAwesomeIcon icon={faCheck} className="text-success me-2" /> Free updates: <strong>12 months</strong>
-                    </ListGroup.Item>
-                  </ListGroup>
-                </Card.Body>
-                <Card.Footer className="bg-white border-0 pt-0 px-4 pb-4">
-                  <Card.Link as={Button} variant="primary" href="https://themesberg.com/product/dashboard/volt-pro-react#pricing" target="_blank" className="w-100 rounded animate-up-2">
-                    Buy now <span className="icon icon-xs ms-3" />
-                  </Card.Link>
-                </Card.Footer>
-              </Card>
-              <OverlayTrigger
-                placement="bottom"
-                trigger={['hover', 'focus']}
-                overlay={<Tooltip>Something unclear? Click to read the full Enterprise License.</Tooltip>}
-              >
-                <Card.Link href="https://themesberg.com/licensing#enterprise" target="_blank" className="font-small text-gray text-center d-block mt-4">
-                  <FontAwesomeIcon icon={faBalanceScale} className="me-2" /> Enterprise License
-                  </Card.Link>
-              </OverlayTrigger>
-            </Col>
-          </Row>
+      <section className="section section-lg bg-white" id="download">
+        <Container>
           <Row>
+            <Col xs={12} lg={8}>
+              <h2 className="fw-light mb-3">Download or upgrade to pro</h2>
+              <p className="lead mb-4 me-lg-6">Do you want to take React development to the next level? Check out the premium version of Volt React Dashboard in the following comparison table.</p>
+            </Col>
+            <Col xs={12} lg={4}>
+              <div className="github-big-icon">
+                <FontAwesomeIcon icon={faGithub} />
+              </div>
+            </Col>
+          </Row>
+          <Row className="mt-6">
+            <Col xs={12} md={6} lg={4} className="mb-5 mb-lg-0">
+              <Card border="light" className="p-4">
+                <Card.Header className="bg-white border-0 pb-0">
+                  <span className="d-block">
+                    <h2 className="text-primary fw-bold align-top">Free version</h2>
+                  </span>
+                </Card.Header>
+                <Card.Body>
+                  <ListGroup className="list-group-flush price-list">
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <strong>200</strong> React Components
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <strong>10</strong> Example Pages
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <FontAwesomeIcon icon={faTimesCircle} className="text-danger me-2" /> Advanced Sidebar
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <FontAwesomeIcon icon={faTimesCircle} className="text-danger me-2" /> MapBox
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <FontAwesomeIcon icon={faTimesCircle} className="text-danger me-2" /> Calendar
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <FontAwesomeIcon icon={faTimesCircle} className="text-danger me-2" /> SVG Map
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <FontAwesomeIcon icon={faTimesCircle} className="text-danger me-2" /> Widgets
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0 pb-0">
+                      <FontAwesomeIcon icon={faTimesCircle} className="text-danger me-2" /> Premium Support
+                    </ListGroup.Item>
+                  </ListGroup>
+                </Card.Body>
+                <Button href="https://themesberg.com/product/dashboard/volt-react" target="_blank" variant="primary" className="w-100 m-0 mt-3 mb-3"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
+              </Card>
+            </Col>
+            <Col xs={12} md={6} lg={4} className="mb-5 mb-lg-0">
+              <Card border="light" className="p-4 py-5 mt-lg-n5">
+                <Card.Header className="bg-white border-0 pb-0">
+                  <span className="d-block">
+                    <h2 className="text-primary fw-bold align-top">Pro Version</h2>
+                  </span>
+                </Card.Header>
+                <Card.Body>
+                  <ListGroup className="list-group-flush price-list">
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <strong>1000+</strong> React Components
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <strong>20</strong> Example Pages
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <strong>6</strong> Plugins
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <FontAwesomeIcon icon={faCheckCircle} className="text-success me-2" /> Advanced Sidebar
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <FontAwesomeIcon icon={faCheckCircle} className="text-success me-2" /> MapBox
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <FontAwesomeIcon icon={faCheckCircle} className="text-success me-2" /> Calendar
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <FontAwesomeIcon icon={faCheckCircle} className="text-success me-2" /> SVG Map
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 ps-0">
+                      <FontAwesomeIcon icon={faCheckCircle} className="text-success me-2" /> Widgets
+                    </ListGroup.Item>
+                    <ListGroup.Item className="bg-white border-0 border-0 ps-0 pb-0">
+                      <FontAwesomeIcon icon={faCheckCircle} className="text-success me-2" /> Premium Support
+                    </ListGroup.Item>
+                  </ListGroup>
+                </Card.Body>
+                <Button href="https://demo.themesberg.com/volt-pro-react/#/" target="_blank" variant="secondary" className="w-100 m-0 mt-3">Demo Volt React Pro <FontAwesomeIcon icon={faExternalLinkAlt} className="ms-1" /></Button>
+              </Card>
+            </Col>
+          </Row>
+          <Row className="mt-lg-6">
             <Col xs={12} className="text-center">
               <h2 className="h5 text-gray fw-normal mb-4">Available in the following technologies:</h2>
               <div>
-                <Card.Link href="https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard" target="_blank" className="me-3">
+                <Card.Link href="https://themesberg.com/product/admin-dashboard/volt-dashboard" target="_blank" className="me-3">
                   <OverlayTrigger placement="top" trigger={['hover', 'focus']} overlay={<Tooltip>Bootstrap 5 · The most popular HTML, CSS, and JS library in the world.</Tooltip>}>
                     <Image src={BS5Logo} className="image image-sm" />
                   </OverlayTrigger>
