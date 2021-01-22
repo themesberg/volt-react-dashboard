@@ -149,7 +149,7 @@ export default () => {
               <div className="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle mb-4">
                 <FontAwesomeIcon icon={faReact} className="text-secondary" />
               </div>
-              <h3 className="fw-bolder">200+</h3>
+              <h3 className="fw-bolder">100+</h3>
               <p className="text-gray">React Components</p>
             </Col>
             <Col xs={6} md={3} className="text-center">
@@ -186,8 +186,8 @@ export default () => {
           <Row className="justify-content-between align-items-center mb-5 mb-lg-7">
             <Col lg={5}>
               <h2>React.js Components</h2>
-              <p className="mb-3 lead fw-bold">200+ premium UI elements based on Bootstrap 5</p>
-              <p className="mb-4">We've built over 200 React.js powered components to be used throughout your application saving you time kickstarting your project.</p>
+              <p className="mb-3 lead fw-bold">100+ premium UI elements based on Bootstrap 5</p>
+              <p className="mb-4">We've built over 100 React.js powered components to be used throughout your application saving you time kickstarting your project.</p>
               <p className="mb-4">Check out the components and use our live React.js component editor to try the code.</p>
               <Button as={Link} to={Routes.Forms.path} variant="secondary" className="mb-5 mb-lg-0" target="_blank"><FontAwesomeIcon icon={faReact} className="me-1" /> Components examples</Button>
             </Col>
@@ -389,7 +389,7 @@ export default () => {
                 <Card.Body>
                   <ListGroup className="list-group-flush price-list">
                     <ListGroup.Item className="bg-white border-0 ps-0">
-                      <strong>200</strong> React Components
+                      <strong>100</strong> React Components
                     </ListGroup.Item>
                     <ListGroup.Item className="bg-white border-0 ps-0">
                       <strong>10</strong> Example Pages

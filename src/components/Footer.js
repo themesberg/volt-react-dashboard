@@ -7,6 +7,8 @@ import { faCogs, faDownload, faRocket } from "@fortawesome/free-solid-svg-icons"
 import BS5Logo from "../assets/img/technologies/bootstrap-5-logo.svg";
 import ReactLogo from "../assets/img/technologies/react-logo.svg";
 import GitHubButton from 'react-github-btn';
+import { Link } from 'react-router-dom';
+import { Routes } from "../routes";
 
 export default (props) => {
   const currentYear = moment().get("year");
@@ -27,7 +29,7 @@ export default (props) => {
               <GitHubButton href="https://github.com/themesberg/volt-react-dashboard" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
             </div>
             <Button href="https://themesberg.com/product/dashboard/volt-react" target="_blank" variant="primary" className="mb-3 w-100"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
-            <Button href="https://themesberg.com/product/dashboard/volt-pro-react" target="_blank" variant="secondary" className="mb-3 w-100"><FontAwesomeIcon icon={faRocket} className="me-1" /> Upgrade to Pro</Button>
+            <Button as={Link} to={Routes.Upgrade.path} variant="secondary" className="mb-3 w-100"><FontAwesomeIcon icon={faRocket} className="me-1" /> Upgrade to Pro</Button>
             <p className="fs-7 text-gray-700 text-center">Available in the following technologies:</p>
             <div className="d-flex justify-content-center">
               <Card.Link href="https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard" target="_blank">

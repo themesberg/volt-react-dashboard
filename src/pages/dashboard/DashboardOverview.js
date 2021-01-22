@@ -104,7 +104,7 @@ export default () => {
               </Row>
             </Col>
 
-            <Col xs={12} xl={4} className="mb-4">
+            <Col xs={12} xl={4}>
               <Row>
                 <Col xs={12} className="mb-4">
                   <BarChartWidget
@@ -118,7 +118,7 @@ export default () => {
                   <RankingWidget />
                 </Col>
 
-                <Col xs={12} className="px-0 mb-4">
+                <Col xs={12} className="px-0">
                   <AcquisitionWidget />
                 </Col>
               </Row>

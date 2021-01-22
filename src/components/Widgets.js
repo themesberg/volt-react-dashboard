@@ -371,9 +371,9 @@ export const SalesValueWidgetPhone = (props) => {
 
 export const AcquisitionWidget = () => {
   return (
-    <Card border="ligh" className="shadow-sm">
+    <Card border="light" className="shadow-sm">
       <Card.Body>
-        <h5 >Acquisition</h5>
+        <h5>Acquisition</h5>
         <p>Tells you where your visitors originated from, such as search engines, social networks or website referrals.</p>
         <div className="d-block">
           <div className="d-flex align-items-center pt-3 me-5">
