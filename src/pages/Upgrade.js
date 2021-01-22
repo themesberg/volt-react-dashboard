@@ -66,7 +66,7 @@ export default () => {
                                 <td className="border-0"><FontAwesomeIcon icon={faCheckCircle} className="ms-1 text-success" /></td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td className="border-0"></td>
                                 <td className="border-0">
                                     <Button href="https://themesberg.com/product/dashboard/volt-react" target="_blank" variant="primary" className="m-0 mt-3 mb-3"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
                                 </td>

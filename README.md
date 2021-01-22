@@ -7,7 +7,7 @@
 
 [![Volt React Dashboard Bootstrap 5](https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-react-dashboard/thumbnail.png)](https://demo.themesberg.com/volt-react-dashboard)
 
-Volt React is a free and open source admin dashboard template built in React.js and based on the latest version of the Bootstrap 5 CSS framework. It features over 200 UI elements, plugins, and example based built with React components.
+Volt React is a free and open source admin dashboard template built in React.js and based on the latest version of the Bootstrap 5 CSS framework. It features over 100 UI elements, plugins, and example based built with React components.
 
 ## Powered by React.js
 
@@ -21,9 +21,9 @@ This library has been built using a data driven methodology, meaning that a larg
 
 This library is based on the latest version of the [Bootstrap 5 CSS framework](https://getbootstrap.com/) which brought many improvements, such as [dropping dependency on jQuery](https://themesberg.com/blog/tutorial/bootstrap-5-tutorial), introducing RTL support, the utility API and many other style and markup improvements.
 
-## Over 200 React Components
+## Over 100 React Components
 
-Volt React included over 200 React UI elements such as buttons, form elements, alerts, modals, tabs, navigation bars, date pickers, and many more. They are all custom styled by professional designers as an extension of the base Bootstrap elements using Sass variables, mixins, and custom markup.
+Volt React included over 100 React UI elements such as buttons, form elements, alerts, modals, tabs, navigation bars, date pickers, and many more. They are all custom styled by professional designers as an extension of the base Bootstrap elements using Sass variables, mixins, and custom markup.
 
 ## 10 Example Dashboard Pages
 
