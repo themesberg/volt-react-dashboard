@@ -113,8 +113,8 @@ export default () => {
                 </Button>
                 <GitHubButton className="mt-lg-2" href="https://github.com/themesberg/volt-react-dashboard" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
               </div>
-              <div className="d-flex justify-content-center flex-column mb-5 mb-lg-6 mt-5">
-                <div className="text-center mb-6">
+              <div className="d-flex justify-content-center flex-column mb-6 mb-lg-5 mt-5">
+                <div className="text-center">
                   <a href="https://themesberg.com" target="_blank">
                     <Image src={ThemesbergLogoIcon} height={25} width={25} className="mb-3" alt="Themesberg Logo" />
                     <p className="text-muted font-small m-0">A Themesberg production</p>
