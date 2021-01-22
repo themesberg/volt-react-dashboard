@@ -25,7 +25,7 @@ export default (props) => {
           <Card.Body className="pt-4">
             <Button className="theme-settings-close" variant="close" size="sm" aria-label="Close" onClick={() => { toggleSettings(false) }} />
             <div className="d-flex justify-content-between align-items-center mb-3">
-              <p className="m-0 mb-1">Give us a lucky star <span role="img" aria-label="gratitude">🙏</span></p>
+              <p className="m-0 mb-1 fs-7">Made with open source <span role="img" aria-label="gratitude">💙</span></p>
               <GitHubButton href="https://github.com/themesberg/volt-react-dashboard" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
             </div>
             <Button href="https://themesberg.com/product/dashboard/volt-react" target="_blank" variant="primary" className="mb-3 w-100"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
