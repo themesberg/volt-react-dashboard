@@ -427,7 +427,7 @@ export default () => {
                 <Card.Body>
                   <ListGroup className="list-group-flush price-list">
                     <ListGroup.Item className="bg-white border-0 ps-0">
-                      <strong>1000+</strong> React Components
+                      <strong>200+</strong> React Components
                     </ListGroup.Item>
                     <ListGroup.Item className="bg-white border-0 ps-0">
                       <strong>20</strong> Example Pages
