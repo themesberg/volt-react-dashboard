@@ -70,21 +70,20 @@ $colors: (
 // Color scheme
 $default:       #262B40;
 $primary:       #262B40;
-$secondary:     #61DAFB;
+$secondary:     #E2252B;
 $tertiary:      #1B998B;
 $quaternary:    #C96480;
 
 // Series names and colors. This can be extended or customized as desired. Just add more series and colors.
 $ct-series-names: (a, b, c, d, e, f, g) !default;
 $ct-series-colors: (
-  #1B998B,
-  #17a5ce,
+  #E2252B,
+  #E2252B,
   #262B40,
   #f5b759,
   #C96480,
   #ffffff,
-  #17a5ce,
-
+  #E2252B,
 );
 
 // Mobile landing color scheme
