@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Col, Row, Card, Button, Tooltip, OverlayTrigger } from '@themesberg/react-bootstrap';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
@@ -15,14 +15,14 @@ export default (props) => {
   const [copied, setCopied] = useState(false);
   const noInline = code.includes('render(');
 
-  const handleCodeChange = (newCode) => {
+  const handleCodeChange = useCallback((newCode) => {
     setCode(newCode);
-  };
+  }, [setCode]);
 
-  const handleCopy = () => {
+  const handleCopy = useCallback(() => {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
-  };
+  }, [setCopied]);
 
   return (
     <LiveProvider noInline={noInline} code={code} language={language} theme={themeStyle} scope={scope}>
@@ -34,11 +34,11 @@ export default (props) => {
             </Card.Body>
           </Card>
         </Col>
-        {imports ? (
+        {imports && (
           <Col xs={12} className="mb-4">
             <Code code={imports} />
           </Col>
-        ) : null}
+        )}
         <Col xs={12} className="mb-4">
           <LiveError className="alert alert-danger" />
 
@@ -54,7 +54,7 @@ export default (props) => {
 
               <LiveEditor onChange={handleCodeChange} className="live-editor" />
 
-              {copied ? <span className="text-success copy-code-text">Copied</span> : null}
+              {copied && <span className="text-success copy-code-text">Copied</span>}
 
               <OverlayTrigger
                 trigger={['hover', 'focus']}
