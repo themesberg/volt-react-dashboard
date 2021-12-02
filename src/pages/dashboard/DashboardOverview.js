@@ -12,28 +12,6 @@ export default () => {
   return (
     <>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
-        <Dropdown className="btn-toolbar">
-          <Dropdown.Toggle as={Button} variant="primary" size="sm" className="me-2">
-            <FontAwesomeIcon icon={faPlus} className="me-2" />New Task
-          </Dropdown.Toggle>
-          <Dropdown.Menu className="dashboard-dropdown dropdown-menu-left mt-2">
-            <Dropdown.Item className="fw-bold">
-              <FontAwesomeIcon icon={faTasks} className="me-2" /> New Task
-            </Dropdown.Item>
-            <Dropdown.Item className="fw-bold">
-              <FontAwesomeIcon icon={faCloudUploadAlt} className="me-2" /> Upload Files
-            </Dropdown.Item>
-            <Dropdown.Item className="fw-bold">
-              <FontAwesomeIcon icon={faUserShield} className="me-2" /> Preview Security
-            </Dropdown.Item>
-
-            <Dropdown.Divider />
-
-            <Dropdown.Item className="fw-bold">
-              <FontAwesomeIcon icon={faRocket} className="text-danger me-2" /> Upgrade to Pro
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
 
         <ButtonGroup>
           <Button variant="outline-primary" size="sm">Share</Button>
@@ -44,8 +22,8 @@ export default () => {
       <Row className="justify-content-md-center">
         <Col xs={12} className="mb-4 d-none d-sm-block">
           <SalesValueWidget
-            title="Sales Value"
-            value="10,567"
+            title="Leads"
+            value="5.000"
             percentage={10.57}
           />
         </Col>
@@ -93,13 +71,11 @@ export default () => {
                 <Col xs={12} className="mb-4">
                   <PageVisitsTable />
                 </Col>
-
+                    <RankingWidget />
                 <Col xs={12} lg={6} className="mb-4">
-                  <TeamMembersWidget />
                 </Col>
 
                 <Col xs={12} lg={6} className="mb-4">
-                  <ProgressTrackWidget />
                 </Col>
               </Row>
             </Col>
@@ -115,7 +91,7 @@ export default () => {
                 </Col>
 
                 <Col xs={12} className="px-0 mb-4">
-                  <RankingWidget />
+                 
                 </Col>
 
                 <Col xs={12} className="px-0">
