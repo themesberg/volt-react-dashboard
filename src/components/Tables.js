@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp, faArrowDown, faArrowUp, faEdit, faEllipsisH, faExternalLinkAlt, faEye, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Col, Row, Nav, Card, Image, Button, Table, Dropdown, ProgressBar, Pagination, ButtonGroup } from '@themesberg/react-bootstrap';
@@ -9,6 +9,11 @@ import { Routes } from "../routes";
 import { pageVisits, pageTraffic, pageRanking } from "../data/tables";
 import transactions from "../data/transactions";
 import commands from "../data/commands";
+
+import BootstrapTable from "react-bootstrap-table-next";
+import paginationFactory from "react-bootstrap-table2-paginator";
+import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
+import { Modal } from 'react-bootstrap';
 
 const ValueChange = ({ value, suffix }) => {
   const valueIcon = value < 0 ? faAngleDown : faAngleUp;
@@ -24,51 +29,99 @@ const ValueChange = ({ value, suffix }) => {
   );
 };
 
-export const PageVisitsTable = () => {
-  const TableRow = (props) => {
-    const { pageName, views, returnValue, bounceRate } = props;
-    const bounceIcon = bounceRate < 0 ? faArrowDown : faArrowUp;
-    const bounceTxtColor = bounceRate < 0 ? "text-danger" : "text-success";
+export const PageVisitsTable = ({ leads }) => {
 
-    return (
-      <tr>
-        <th scope="row">{pageName}</th>
-        <td>{views}</td>
-        <td>${returnValue}</td>
-        <td>
-          <FontAwesomeIcon icon={bounceIcon} className={`${bounceTxtColor} me-3`} />
-          {Math.abs(bounceRate)}%
-        </td>
-      </tr>
-    );
+  const [modalShow, setModalShow] = React.useState(false);
+  const [rowLeader, setrowLeader] = useState();
+
+  const selectOptions = {
+    'champions': 'champions',
+    'Climate activists': 'Climate activists',
+    'Climate hacker': 'Climate hacker',
+    'Climate entrepreneur': 'Climate entrepreneur'
   };
 
+  const columns = [
+    { dataField: "name", text: "Name", filter: textFilter() },
+    { dataField: "email", text: "Email", filter: textFilter() },
+    { dataField: "country", text: "Country", filter: textFilter() },
+    {
+      dataField: "category", text: "Category", filter: selectFilter({
+        options: selectOptions
+      })
+    },
+  ];
+
+  const rowEvents = {
+    onClick: (e, row, rowIndex) => {
+      setModalShow(true);
+      setrowLeader(row);
+      console.log(row);
+    }
+  };
+
+  function MyVerticallyCenteredModal(props) {
+
+    const { lead } = props;
+    return (
+      <Modal
+        {...props}
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            {lead?.name}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>Category: {lead?.category}</p>
+          <p>Country: {lead?.country}</p>
+          <p>City: {lead?.city}</p>
+          <p>Region: {lead?.region}</p>
+          <p>Email: {lead?.email}</p>
+          <p>Hackname: {lead?.hackname}</p>
+          <p> Phone: {lead?.phone}</p>
+
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
   return (
-    <Card border="light" className="shadow-sm">
-      <Card.Header>
-        <Row className="align-items-center">
-          <Col>
-            <h5>Page visits</h5>
-          </Col>
-          <Col className="text-end">
-            <Button variant="secondary" size="sm">See all</Button>
-          </Col>
-        </Row>
-      </Card.Header>
-      <Table responsive className="align-items-center table-flush">
-        <thead className="thead-light">
-          <tr>
-            <th scope="col">Page name</th>
-            <th scope="col">Page Views</th>
-            <th scope="col">Page Value</th>
-            <th scope="col">Bounce rate</th>
-          </tr>
-        </thead>
-        <tbody>
-          {pageVisits.map(pv => <TableRow key={`page-visit-${pv.id}`} {...pv} />)}
-        </tbody>
-      </Table>
-    </Card>
+    <>
+      <Card border="light" className="shadow-sm">
+        <Card.Header>
+          <Row className="align-items-center">
+            <Col>
+              <h5>Leads</h5>
+            </Col>
+            <Col className="text-end">
+              {/* <Button variant="primary" onClick={() => setModalShow(true)}>
+                Launch vertically centered modal
+              </Button> */}
+            </Col>
+          </Row>
+        </Card.Header>
+        <BootstrapTable
+          keyField="name"
+          data={leads}
+          columns={columns}
+          pagination={paginationFactory()}
+          filter={filterFactory({ options: selectOptions })}
+          rowEvents={rowEvents}
+        />
+      </Card>
+      <MyVerticallyCenteredModal
+        size="sm"
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        lead={rowLeader}
+        aria-labelledby="example-modal-sizes-title-sm"
+      />
+    </>
   );
 };
 

@@ -14,12 +14,13 @@ export const SalesValueChart = () => {
     showArea: true,
     fullWidth: true,
     axisX: {
+      offset: 30,
       position: 'end',
-      showGrid: true
+      showGrid: false
     },
     axisY: {
       // On the y-axis start means left and end means right
-      showGrid: false,
+      showGrid: true,
       showLabel: false,
       labelInterpolationFnc: value => `$${value / 1}k`
     }
