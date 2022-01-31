@@ -21,7 +21,6 @@ import { HashRouter } from "react-router-dom";
 import "./scss/volt.scss";
 
 // vendor styles
-import "@fortawesome/fontawesome-free/css/all.css";
 import "react-datetime/css/react-datetime.css";
 
 import HomePage from "./pages/HomePage";
