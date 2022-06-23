@@ -18,7 +18,8 @@ import ReactDOM from 'react-dom';
 import { HashRouter } from "react-router-dom";
 
 // core styles
-import "./scss/volt.scss";
+// import "./scss/volt.scss";
+import "./scss/volt.css"
 
 // vendor styles
 import "react-datetime/css/react-datetime.css";

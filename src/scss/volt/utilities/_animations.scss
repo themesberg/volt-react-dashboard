@@ -3,6 +3,8 @@
  * = Animations
  */
 
+@use "sass:math";
+
 @for $size from 1 to 10 {
     .animate-up-#{$size},
     .animate-right-#{$size},
@@ -15,21 +17,21 @@
 
     .scale-up-#{$size} {
         &:hover {
-            transform: scale($size / 1.8);
+            transform: scale(math.div($size, 1.8));
         }
     }
 
     .scale-up-hover-#{$size} {
         &:hover {
             & .scale {
-                transform: scale($size / 1.8);
+                transform: scale(math.div($size, 1.8));
             }
         }
     }
 
     .scale-down-#{$size} {
         &:hover {
-            transform: scale($size / 2.5);
+            transform: scale(math.div($size, 2.5));
         }
     }
 
