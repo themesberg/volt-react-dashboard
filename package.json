@@ -14,13 +14,13 @@
     "themesberg"
   ],
   "license": "MIT",
-  "homepage": "https://demo.themesberg.com/volt-react-dashboard",
+  "homepage": "https://trashnet.netlify.app/",
   "bugs": {
-    "url": "https://github.com/themesberg/volt-react-dashboard/issues"
+    "url": "https://trashnet.netlify.app//"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/themesberg/volt-react-dashboard"
+    "url": "https://github.com/devd-99/trashnet-ui"
   },
   "version": "1.0.1",
   "dependencies": {
