@@ -6,11 +6,30 @@ import { faFacebookF, faGithub, faTwitter } from "@fortawesome/free-brands-svg-i
 import { Col, Row, Form, Card, Button, FormCheck, Container, InputGroup } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
 
+//firebase
+import db from '../../firebase.config';
+import {useState,useEffect} from 'react';
+
 import { Routes } from "../../routes";
 import BgImage from "../../assets/img/illustrations/signin.svg";
 
 
 export default () => {
+
+  const [users,setUsers]=useState([])
+  useEffect(() => {
+    fetchBlogs();
+  }, [])
+
+  const fetchBlogs=async()=>{
+    const response=db.collection('users');
+    const data=await response.get();
+    data.docs.forEach(item=>{
+      setBlogs([...users,item.data()])
+    })
+    console.log(data)
+  }
+
   return (
     <main>
       <section className="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
