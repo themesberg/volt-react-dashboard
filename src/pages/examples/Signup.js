@@ -1,7 +1,7 @@
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faEnvelope, faUnlockAlt } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft, faEnvelope, faPersonBooth, faUnlockAlt } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { Col, Row, Form, Card, Button, FormCheck, Container, InputGroup } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -9,8 +9,56 @@ import { Link } from 'react-router-dom';
 import { Routes } from "../../routes";
 import BgImage from "../../assets/img/illustrations/signin.svg";
 
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+const initialFormData = Object.freeze({
+  userName: "",
+  password: "",
+  email: "",
+  confPass: ""
+});
 
 export default () => {
+
+  const auth = getAuth();
+  const [formData, updateFormData] = useState(initialFormData);
+
+  const handleChange = (e) => {
+    console.log("handleChange called")
+    updateFormData({
+      ...formData,
+
+      // Trimming any whitespace
+      [e.target.name]: e.target.value.trim()
+    });
+  };
+  
+
+  const handleSubmit = () => {
+    console.log("handlesubmit called")
+
+    console.log(formData.password);
+    const passMatch = checkPassMatch(formData.password, formData.confPass)
+    const passLength = 
+    console.log(formData.email);
+    console.log(formData.confirmPassword);
+    createUserWithEmailAndPassword(auth, formData.email, formData.password)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      console.log(user.uid);
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+    });
+
+    
+  };
+  
+
   return (
     <main>
       <section className="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
@@ -27,31 +75,44 @@ export default () => {
                   <h3 className="mb-0">Create an account</h3>
                 </div>
                 <Form className="mt-4">
+
                   <Form.Group id="email" className="mb-4">
                     <Form.Label>Your Email</Form.Label>
                     <InputGroup>
                       <InputGroup.Text>
                         <FontAwesomeIcon icon={faEnvelope} />
                       </InputGroup.Text>
-                      <Form.Control autoFocus required type="email" placeholder="example@company.com" />
+                      <Form.Control autoFocus id="email" name="email" required type="email" placeholder="example@company.com" onChange={handleChange} />
                     </InputGroup>
                   </Form.Group>
+
+                  <Form.Group id="username" className="mb-4">
+                    <Form.Label>Your Username</Form.Label>
+                    <InputGroup>
+                      <InputGroup.Text>
+                        <FontAwesomeIcon icon={faPersonBooth} />
+                      </InputGroup.Text>
+                      <Form.Control autoFocus id="username" name="username" required type="username" placeholder="sampleUserName" onChange={handleChange}/>
+                    </InputGroup>
+                  </Form.Group>
+
                   <Form.Group id="password" className="mb-4">
                     <Form.Label>Your Password</Form.Label>
                     <InputGroup>
                       <InputGroup.Text>
                         <FontAwesomeIcon icon={faUnlockAlt} />
                       </InputGroup.Text>
-                      <Form.Control required type="password" placeholder="Password" />
+                      <Form.Control required type="password" id="password" name="password" placeholder="Password" onChange={handleChange} />
                     </InputGroup>
                   </Form.Group>
+
                   <Form.Group id="confirmPassword" className="mb-4">
                     <Form.Label>Confirm Password</Form.Label>
                     <InputGroup>
                       <InputGroup.Text>
                         <FontAwesomeIcon icon={faUnlockAlt} />
                       </InputGroup.Text>
-                      <Form.Control required type="password" placeholder="Confirm Password" />
+                      <Form.Control required id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password" onChange={handleChange}/>
                     </InputGroup>
                   </Form.Group>
                   <FormCheck type="checkbox" className="d-flex mb-4">
@@ -61,7 +122,7 @@ export default () => {
                     </FormCheck.Label>
                   </FormCheck>
 
-                  <Button variant="primary" type="submit" className="w-100">
+                  <Button variant="primary" className="w-100"  onClick={handleSubmit}>
                     Sign up
                   </Button>
                 </Form>

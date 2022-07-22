@@ -5,30 +5,35 @@ import { faAngleLeft, faEnvelope, faUnlockAlt } from "@fortawesome/free-solid-sv
 import { faFacebookF, faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { Col, Row, Form, Card, Button, FormCheck, Container, InputGroup } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
+import { Routes } from "../../routes";
+import BgImage from "../../assets/img/illustrations/signin.svg";
 
 //firebase
 import db from '../../firebase.config';
+import { doc, onSnapshot, collection, query, where,getDocs } from "firebase/firestore";
 import {useState,useEffect} from 'react';
 
-import { Routes } from "../../routes";
-import BgImage from "../../assets/img/illustrations/signin.svg";
+
+
 
 
 export default () => {
 
+  const q = query(collection(db, "users"));
+
   const [users,setUsers]=useState([])
   useEffect(() => {
-    fetchBlogs();
+    fetchUsers();
   }, [])
-
-  const fetchBlogs=async()=>{
-    const response=db.collection('users');
-    const data=await response.get();
-    data.docs.forEach(item=>{
-      setBlogs([...users,item.data()])
-    })
-    console.log(data)
+  const fetchUsers=async()=>{
+    const querySnapshot = await getDocs(q);
+    console.log(querySnapshot)
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      console.log(doc.id, " => ", doc.data());
+    });
   }
+
 
   return (
     <main>

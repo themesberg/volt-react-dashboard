@@ -26,7 +26,9 @@ import "react-datetime/css/react-datetime.css";
 
 import HomePage from "./pages/HomePage";
 import ScrollToTop from "./components/ScrollToTop";
-
+if (module.hot) {
+  module.hot.accept();
+}
 ReactDOM.render(
   <HashRouter>
     <ScrollToTop />
