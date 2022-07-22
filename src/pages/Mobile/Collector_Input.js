@@ -1,5 +1,4 @@
-React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 import { faAngleLeft, faEnvelope, faUnlockAlt } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { Col, Row, Form, Card, Button, FormCheck, Container, InputGroup } from '@themesberg/react-bootstrap';
@@ -23,7 +22,7 @@ export default () => {
             <Col xs={12} className="d-flex align-items-center justify-content-center">
               <div className="mb-4 mb-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                 <div className="text-center text-md-center mb-4 mt-md-0">
-                  <h3 className="mb-0">Create an account</h3>
+                  <h3 className="mb-0">Collector Input</h3>
                 </div>
                 <Form className="mt-4">
                   <Form.Group id="email" className="mb-4">
