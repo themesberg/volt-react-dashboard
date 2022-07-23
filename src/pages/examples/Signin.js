@@ -109,8 +109,7 @@ export default () => {
                 </div>
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
-                    
-                    <Card.Link as={Link} to={Routes.RecyclerC.path} className="fw-bold">
+                    <Card.Link as={Link} to={Routes.RecyclerConfirmation.path} className="fw-bold">
                       {` Recycler Confirmation`}
                     </Card.Link>
                   </span>
