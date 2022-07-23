@@ -102,8 +102,16 @@ export default () => {
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
                  
-                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
-                      {` Collector `}
+                    <Card.Link as={Link} to={Routes.Signup.path} className="fw-bold">
+                      {` Sign Up `}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+                 
+                    <Card.Link as={Link} to={Routes.CollectorInput.path} className="fw-bold">
+                      {` Collector Input `}
                     </Card.Link>
                   </span>
                 </div>
@@ -117,7 +125,7 @@ export default () => {
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
              
-                    <Card.Link as={Link} to={Routes.recip.path} className="fw-bold">
+                    <Card.Link as={Link} to={Routes.RecyclerInput.path} className="fw-bold">
                       {`Recycler Input`}
                     </Card.Link>
                   </span>
@@ -125,7 +133,7 @@ export default () => {
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
 
-                    <Card.Link as={Link} to={Routes.Manuf.path} className="fw-bold">
+                    <Card.Link as={Link} to={Routes.ManufacturingProcess.path} className="fw-bold">
                       {` Manufacturer Confirmation `}
                     </Card.Link>
                   </span>
@@ -133,8 +141,8 @@ export default () => {
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
                    
-                    <Card.Link as={Link} to={Routes.gst.path} className="fw-bold">
-                      {` GST bill `}
+                    <Card.Link as={Link} to={Routes.GSTBill.path} className="fw-bold">
+                      {` GST Bill `}
                     </Card.Link>
                   </span>
                 </div>
