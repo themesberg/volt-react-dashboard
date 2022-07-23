@@ -10,6 +10,8 @@ import { Routes } from "../../routes";
 import BgImage from "../../assets/img/illustrations/signin.svg";
 
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { collection, addDoc } from "firebase/firestore";
+import db from '../../firebase.config';
 
 const initialFormData = Object.freeze({
   userName: "",
@@ -34,28 +36,28 @@ export default () => {
   };
   
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     console.log("handlesubmit called")
 
     console.log(formData.password);
-    const passMatch = checkPassMatch(formData.password, formData.confPass)
-    const passLength = 
+    // const passMatch = checkPassMatch(formData.password, formData.confPass)
+    // const passLength = 
+
+    const email = String(formData.email)
+    const password = String(formData.password)
+    const name = String(formData.userName)
     console.log(formData.email);
     console.log(formData.confirmPassword);
-    createUserWithEmailAndPassword(auth, formData.email, formData.password)
-    .then((userCredential) => {
-      // Signed in 
-      const user = userCredential.user;
-      console.log(user.uid);
-      // ...
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // ..
+    //add form validation
+    const res = await createUserWithEmailAndPassword(auth, email, password);
+    const user = res.user;
+    await addDoc(collection(db, "users"), {
+      uid: user.uid,
+      name: name,
+      authProvider: "local",
+      email,
     });
 
-    
   };
   
 

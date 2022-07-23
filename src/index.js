@@ -17,18 +17,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from "react-router-dom";
 
+
 // core styles
 // import "./scss/volt.scss";
 import "./scss/volt.css"
 
 // vendor styles
 import "react-datetime/css/react-datetime.css";
+// import * as serviceWorker from './serviceWorker';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 import HomePage from "./pages/HomePage";
 import ScrollToTop from "./components/ScrollToTop";
 if (module.hot) {
   module.hot.accept();
 }
+
 ReactDOM.render(
   <HashRouter>
     <ScrollToTop />
@@ -36,3 +40,8 @@ ReactDOM.render(
   </HashRouter>,
   document.getElementById("root")
 );
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://cra.link/PWA
+serviceWorkerRegistration.register();
