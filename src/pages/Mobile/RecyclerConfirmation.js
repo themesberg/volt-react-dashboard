@@ -162,22 +162,32 @@ export default () => {
                                         </div>
                                         {/* Camera */}
                                     </Form.Group>
-
                                     <Form.Group id="vehicle" className="mb-4">
                                         <Form.Label>Vehicle Number</Form.Label>
-                                        <div class="ml-5">
-                                            <Button>
-                                                <input
-                                                    type="file"
-                                                    id="weight-collector"
-                                                    name="weight-collector"
-                                                    accept="image/*"
-                                                    capture="environment"
-                                                ></input>
 
-                                                <FontAwesomeIcon icon={faCameraRetro} />
-                                            </Button>
-                                        </div>
+                                        <InputGroup>
+
+                                            <Form.Control
+                                                autoFocus
+                                                required
+                                                placeholder="KAXX 00 1234"
+                                            />
+                                        </InputGroup>
+
+
+                                        <Button>
+                                            <input
+                                                type="file"
+                                                id="weight-collector"
+                                                name="weight-collector"
+                                                accept="image/*"
+                                                capture="environment"
+                                            ></input>
+
+                                            <FontAwesomeIcon icon={faCameraRetro} />
+                                        </Button>
+
+
                                         {/* Camera */}
                                     </Form.Group>
                                     {/* Summary */}
