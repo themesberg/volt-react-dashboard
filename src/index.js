@@ -16,6 +16,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from "react-router-dom";
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+
+
 
 
 // core styles
@@ -26,6 +30,7 @@ import "./scss/volt.css"
 import "react-datetime/css/react-datetime.css";
 // import * as serviceWorker from './serviceWorker';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+
 
 import HomePage from "./pages/HomePage";
 import ScrollToTop from "./components/ScrollToTop";
