@@ -5,12 +5,36 @@ import { faAngleLeft, faEnvelope, faUnlockAlt } from "@fortawesome/free-solid-sv
 import { faFacebookF, faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { Col, Row, Form, Card, Button, FormCheck, Container, InputGroup } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
-
 import { Routes } from "../../routes";
 import BgImage from "../../assets/img/illustrations/signin.svg";
 
+//firebase
+import db from '../../firebase.config';
+import { doc, onSnapshot, collection, query, where,getDocs } from "firebase/firestore";
+import {useState,useEffect} from 'react';
+
+
+
+
 
 export default () => {
+
+  const q = query(collection(db, "users"));
+
+  const [users,setUsers]=useState([])
+  useEffect(() => {
+    fetchUsers();
+  }, [])
+  const fetchUsers=async()=>{
+    const querySnapshot = await getDocs(q);
+    console.log(querySnapshot)
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      console.log(doc.id, " => ", doc.data());
+    });
+  }
+
+
   return (
     <main>
       <section className="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
