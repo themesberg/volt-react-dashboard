@@ -15,39 +15,13 @@ const initialFormData = Object.freeze({
   userName: "",
   password: "",
   email: "",
-  confPass: "",
-  reg_address: "",
-  gstin: "",
-  timestamp: "",
-  site_img: "",
-  capacity: "",
-  categories: "",
-  num_workers: "",
-  checkbox: ""
+  confPass: ""
 });
 
 export default () => {
 
   const auth = getAuth();
-  
   const [formData, updateFormData] = useState(initialFormData);
-
-
-  const registerWithEmailAndPassword = async (name, email, password, reg_address, gstin, timestamp, site_img, capacity, categories, num_workers) => {
-    try {
-      const res = await createUserWithEmailAndPassword(auth, email, password, name, );
-      const user = res.user;
-      await addDoc(collection(db, "users"), {
-        uid: user.uid,
-        name,
-        authProvider: "local",
-        email,
-      });
-    } catch (err) {
-      console.error(err);
-      alert(err.message);
-    }
-  };
 
   const handleChange = (e) => {
     console.log("handleChange called")
@@ -63,33 +37,15 @@ export default () => {
   const handleSubmit = () => {
     console.log("handlesubmit called")
 
-    
-    if ("geolocation" in navigator) {
-      console.log("Available");
-    } else {
-      console.log("Not Available");
-    }
-    
-
     console.log(formData.password);
     const passMatch = checkPassMatch(formData.password, formData.confPass)
     const passLength = 
     console.log(formData.email);
-    console.log(formData.reg_address);
-    console.log(formData.capacity);
-    console.log(formData.categories);
-    console.log(formData.num_workers);
-    // console.log(formData.);
+    console.log(formData.confirmPassword);
     createUserWithEmailAndPassword(auth, formData.email, formData.password)
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
-      await addDoc(collection(db, "users"), {
-        uid: user.uid,
-        name,
-        authProvider: "local",
-        email,
-      });
       console.log(user.uid);
       // ...
     })
@@ -159,71 +115,6 @@ export default () => {
                       <Form.Control required id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password" onChange={handleChange}/>
                     </InputGroup>
                   </Form.Group>
-
-                  <Form.Group id="reg_address" className="mb-4">
-                    <Form.Label>Registered Address</Form.Label>
-                    <InputGroup>
-                      <InputGroup.Text>
-                        <FontAwesomeIcon icon={faUnlockAlt} />
-                      </InputGroup.Text>
-                      <Form.Control required id="reg_address" name="reg_address" type="text" placeholder="Enter Facility Address here" onChange={handleChange}/>
-                    </InputGroup>
-                  </Form.Group>
-
-                  <Form.Group id="capacity" className="mb-4">
-                    <Form.Label>Capacity</Form.Label>
-                    <InputGroup>
-                      <InputGroup.Text>
-                        <FontAwesomeIcon icon={faUnlockAlt} />
-                      </InputGroup.Text>
-                      <Form.Control required id="capacity" name="capacity" type="text" placeholder="in kgs" onChange={handleChange}/>
-                    </InputGroup>
-                  </Form.Group>
-
-                  <Form.Group id="categories" className="mb-4">
-                    <Form.Label>Categories</Form.Label>
-                    <InputGroup>
-                      <InputGroup.Text>
-                        <FontAwesomeIcon icon={faUnlockAlt} />
-                      </InputGroup.Text>
-                      <Form.Control required id="categories" name="" type="text" placeholder="" onChange={handleChange}/>
-                      <FormCheck type="checkbox" className="d-flex mb-4">
-
-                        <FormCheck.Input required id="A1" className="me-2" />
-                        <FormCheck.Label htmlFor="A1">
-                          A1
-                        </FormCheck.Label>
-
-                        <FormCheck.Input required id="A2" className="me-2" />
-                        <FormCheck.Label htmlFor="A2">
-                          A2
-                        </FormCheck.Label>
-                        
-                        <FormCheck.Input required id="A3" className="me-2" />
-                        <FormCheck.Label htmlFor="A3">
-                          A3
-                        </FormCheck.Label>
-                        
-                        <FormCheck.Input required id="A4" className="me-2" />
-                        <FormCheck.Label htmlFor="A4">
-                          A4
-                        </FormCheck.Label>
-                        
-                    </FormCheck>
-                    </InputGroup>
-                  </Form.Group>
-
-                  <Form.Group id="num_workers" className="mb-4">
-                    <Form.Label>Number of workers</Form.Label>
-                    <InputGroup>
-                      <InputGroup.Text>
-                        <FontAwesomeIcon icon={faUnlockAlt} />
-                      </InputGroup.Text>
-                      <Form.Control required id="num_workers" name="num_workers" type="text" placeholder="" onChange={handleChange}/>
-                    </InputGroup>
-                  </Form.Group>
-
-
                   <FormCheck type="checkbox" className="d-flex mb-4">
                     <FormCheck.Input required id="terms" className="me-2" />
                     <FormCheck.Label htmlFor="terms">
