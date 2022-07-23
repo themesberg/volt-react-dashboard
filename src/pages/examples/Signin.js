@@ -118,7 +118,7 @@ export default () => {
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
              
-                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
+                    <Card.Link as={Link} to={Routes.recip.path} className="fw-bold">
                       {`Recycler Input`}
                     </Card.Link>
                   </span>
@@ -126,7 +126,7 @@ export default () => {
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
 
-                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
+                    <Card.Link as={Link} to={Routes.Manuf.path} className="fw-bold">
                       {` Manufacturer Confirmation `}
                     </Card.Link>
                   </span>
@@ -134,7 +134,7 @@ export default () => {
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
                    
-                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
+                    <Card.Link as={Link} to={Routes.gst.path} className="fw-bold">
                       {` GST bill `}
                     </Card.Link>
                   </span>

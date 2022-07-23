@@ -90,7 +90,7 @@ export default () => {
               <div className="mb-4 mb-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                 <div className="text-center text-md-center mb-4 mt-md-0">
                   {/* Header */}
-                  <h3 className="mb-0">Recycler Input</h3>
+                  <h3 className="mb-0">Recyler Input</h3>
                 </div>
                 <Form className="mt-4">
                   <div className="mt-3 mb-4 text-center"></div>
@@ -148,7 +148,7 @@ export default () => {
 
                   {/* Type of Plastic */}
                   <Form.Group id="typeOfPlastic" className="mb-4">
-                    <Form.Label>Type of Plastic Collected</Form.Label>
+                    <Form.Label>Type of Plastic </Form.Label>
                     <InputGroup>
                       <DropdownButton
                         variant="outline-secondary"
@@ -165,7 +165,7 @@ export default () => {
                   </Form.Group>
                   {/* Recycling Facility */}
                   <Form.Group id="typeOfPlastic" className="mb-4">
-                    <Form.Label>Type of Plastic Collected</Form.Label>
+                    <Form.Label>Type of Plastic </Form.Label>
                     <InputGroup>
                       <DropdownButton
                         variant="outline-secondary"

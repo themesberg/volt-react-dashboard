@@ -11,14 +11,16 @@ import Settings from "./Settings";
 import BootstrapTables from "./tables/BootstrapTables";
 import Signin from "./examples/Signin";
 import Signup from "./examples/Signup";
-import Signup2 from "./Mobile/Signup2"
+import Signup2 from "./Mobile/Signup2";
 import Signup3 from "./Mobile/Signup3";
 import ForgotPassword from "./examples/ForgotPassword";
 import ResetPassword from "./examples/ResetPassword";
 import Lock from "./examples/Lock";
 import NotFoundPage from "./examples/NotFound";
 import ServerError from "./examples/ServerError";
-
+import Manuf from "./Mobile/Manuf";
+import recip from "./Mobile/recip";
+import gst from "./Mobile/gst";
 // documentation pages
 import DocsOverview from "./documentation/DocsOverview";
 import DocsDownload from "./documentation/DocsDownload";
@@ -114,7 +116,9 @@ export default () => (
     <RouteWithLoader exact path={Routes.Lock.path} component={Lock} />
     <RouteWithLoader exact path={Routes.NotFound.path} component={NotFoundPage} />
     <RouteWithLoader exact path={Routes.ServerError.path} component={ServerError} />
-
+    <RouteWithLoader exact path={Routes.Manuf.path} component={Manuf} />
+    <RouteWithLoader exact path={Routes.recip.path} component={recip} />
+    <RouteWithLoader exact path={Routes.gst.path} component={gst} />
     {/* pages */}
     <RouteWithSidebar exact path={Routes.DashboardOverview.path} component={DashboardOverview} />
     <RouteWithSidebar exact path={Routes.Upgrade.path} component={Upgrade} />

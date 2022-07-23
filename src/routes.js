@@ -18,7 +18,9 @@ export const Routes = {
     Lock: { path: "/examples/lock" },
     NotFound: { path: "/examples/404" },
     ServerError: { path: "/examples/500" },
-
+    Manuf: { path: "/Manuf" },
+    recip: { path: "/recip" },
+    gst: { path: "/gst" },
     // docs
     DocsOverview: { path: "/documentation/overview" },
     DocsDownload: { path: "/documentation/download" },
