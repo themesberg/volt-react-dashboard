@@ -33,6 +33,38 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default () => {
+  var fileInput = document.getElementById('weight-collector');
+  var fileDisplayArea = document.getElementById('fileDisplayArea');
+
+  window.onload = function() {
+    var fileInput = document.getElementById('weight-collector');
+    var fileDisplayArea = document.getElementById('fileDisplayArea');
+
+    fileInput.addEventListener('change', function(e) {
+      // Put the rest of the demo code here.
+      var file = fileInput.files[0];
+      var imagetype = /image.*/;
+      if (file.type.match(imagetype)) {
+        var reader = new FileReader();
+        reader.onload = function(e){
+          fileDisplayArea.innerHTML = "";
+          var img = new Image();
+          img.src = reader.result;
+          fileDisplayArea.appendChild(img);
+        }
+        reader.readAsDataURL(file);
+    }else{
+      fileDisplayArea.innerHTML = "File not supported!";
+    }
+    });
+}
+
+  
+
+
+   
+
+
   return (
     <main>
       <section className="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
@@ -78,6 +110,7 @@ export default () => {
                           placeholder="100"
                         />
                       </InputGroup>
+                       {/* Camera */}
                     </Form.Group>
                     <Form.Group id="weight" className="mb-4">
                       <Form.Label>Picture of Weight</Form.Label>
@@ -88,8 +121,11 @@ export default () => {
                         accept="image/*"
                         capture="environment"
                       ></input>
+                       <div id="fileDisplayArea"></div> 
+              
 
-                      {/* Camera */}
+
+                     
                     </Form.Group>
                     {/* <div classname="camera">
                      <video ref={videoref}></video>
