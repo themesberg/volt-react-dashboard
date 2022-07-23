@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useRef, useEffect, useState} from "react";
 
+import Webcam from "react-webcam";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
@@ -31,11 +32,15 @@ import {
   faUnlockAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
+
 export default () => {
+ 
+
   return (
     <main>
       <section className="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
         <Container>
+          
           <p className="text-center">
             <Card.Link
               as={Link}
@@ -56,11 +61,14 @@ export default () => {
             >
               <div className="mb-4 mb-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                 <div className="text-center text-md-center mb-4 mt-md-0">
+                  
+                  {/* Header */}
                   <h3 className="mb-0">Collector Input</h3>
                 </div>
                 <Form className="mt-4">
                   <div className="mt-3 mb-4 text-center"></div>
                   <div className=" justify-content-center my-4">
+                     {/* Weight */}
                     <Form.Group id="weight" className="mb-4">
                       <Form.Label>Weight of Collected waste</Form.Label>
                       <InputGroup>
@@ -78,25 +86,29 @@ export default () => {
                     </Form.Group>
                     <Form.Group id="weight" className="mb-4">
                       <Form.Label>Weight of Collected waste</Form.Label>
-                      <InputGroup>
-                        <InputGroup.Text>
-                          <FontAwesomeIcon icon={faWeightHanging} />
-                        </InputGroup.Text>
+                      <input type="file" accept="image/*" capture="environment"></input>
 
-                        <Form.Control
-                          autoFocus
-                          required
-                          type="weight"
-                          placeholder="100"
-                        />
-                      </InputGroup>
+
+                  {/* Camera */}
+                  
                     </Form.Group>
+                    {/* <div classname="camera">
+                     <video ref={videoref}></video>
                     <Button
                       variant="outline-light"
                       className="btn-icon-only btn-pil text-dark"
                     >
+                      SNAP!
                       <FontAwesomeIcon icon={faCameraRetro} />
                     </Button>
+                    </div>
+                    <div classname={'result' + (hasPhoto ? 'hasPhoto' : '')}>
+                      <canvas ref={photoref}>
+                        <button>
+                          CLOSE!
+                        </button>
+                      </canvas>
+                    </div> */}
                   </div>
 
                   {/* Type of Plastic */}
