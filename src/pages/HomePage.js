@@ -12,6 +12,7 @@ import BootstrapTables from "./tables/BootstrapTables";
 import Signin from "./examples/Signin";
 import Signup from "./examples/Signup";
 import Signup2 from "./Mobile/Signup2"
+import Signup3 from "./Mobile/Signup3";
 import ForgotPassword from "./examples/ForgotPassword";
 import ResetPassword from "./examples/ResetPassword";
 import Lock from "./examples/Lock";
@@ -50,6 +51,7 @@ import Tabs from "./components/Tabs";
 import Tooltips from "./components/Tooltips";
 import Toasts from "./components/Toasts";
 import Collector_Input from './Mobile/Signup2';
+import Collector_Input3 from './Mobile/Signup3'; 
 
 const RouteWithLoader = ({ component: Component, ...rest }) => {
   const [loaded, setLoaded] = useState(false);
@@ -105,6 +107,7 @@ export default () => (
     <RouteWithLoader exact path={Routes.Presentation.path} component={Presentation} />
     <RouteWithLoader exact path={Routes.Signin.path} component={Signin} />
     <RouteWithLoader exact path={Routes.Signup.path} component={Signup2} />
+    <RouteWithLoader exact path={Routes.Signup.path} component={Signup3} />
     <RouteWithLoader exact path={Routes.Collector.path} component={Collector_Input} />
     <RouteWithLoader exact path={Routes.ForgotPassword.path} component={ForgotPassword} />
     <RouteWithLoader exact path={Routes.ResetPassword.path} component={ResetPassword} />
