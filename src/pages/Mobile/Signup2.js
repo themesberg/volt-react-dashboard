@@ -76,6 +76,21 @@ export default () => {
                         />
                       </InputGroup>
                     </Form.Group>
+                    <Form.Group id="weight" className="mb-4">
+                      <Form.Label>Weight of Collected waste</Form.Label>
+                      <InputGroup>
+                        <InputGroup.Text>
+                          <FontAwesomeIcon icon={faWeightHanging} />
+                        </InputGroup.Text>
+
+                        <Form.Control
+                          autoFocus
+                          required
+                          type="weight"
+                          placeholder="100"
+                        />
+                      </InputGroup>
+                    </Form.Group>
                     <Button
                       variant="outline-light"
                       className="btn-icon-only btn-pil text-dark"
