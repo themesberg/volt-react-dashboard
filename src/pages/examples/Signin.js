@@ -77,9 +77,41 @@ export default () => {
                 </div>
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
-                    Not registered?
+                 
                     <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
-                      {` Create account `}
+                      {` Collector `}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+                    
+                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
+                      {` Recycler Confirmation`}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+             
+                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
+                      {`Recycler Input`}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+
+                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
+                      {` Manufacturer Confirmation `}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+                   
+                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
+                      {` GST bill `}
                     </Card.Link>
                   </span>
                 </div>
