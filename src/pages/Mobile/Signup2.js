@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 import Webcam from "react-webcam";
 import { Link } from "react-router-dom";
@@ -32,15 +32,11 @@ import {
   faUnlockAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-
 export default () => {
- 
-
   return (
     <main>
       <section className="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
         <Container>
-          
           <p className="text-center">
             <Card.Link
               as={Link}
@@ -61,14 +57,13 @@ export default () => {
             >
               <div className="mb-4 mb-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                 <div className="text-center text-md-center mb-4 mt-md-0">
-                  
                   {/* Header */}
                   <h3 className="mb-0">Collector Input</h3>
                 </div>
                 <Form className="mt-4">
                   <div className="mt-3 mb-4 text-center"></div>
                   <div className=" justify-content-center my-4">
-                     {/* Weight */}
+                    {/* Weight */}
                     <Form.Group id="weight" className="mb-4">
                       <Form.Label>Weight of Collected waste</Form.Label>
                       <InputGroup>
@@ -85,12 +80,16 @@ export default () => {
                       </InputGroup>
                     </Form.Group>
                     <Form.Group id="weight" className="mb-4">
-                      <Form.Label>Weight of Collected waste</Form.Label>
-                      <input type="file" accept="image/*" capture="environment"></input>
+                      <Form.Label>Picture of Weight</Form.Label>
+                      <input
+                        type="file"
+                        id="weight-collector"
+                        name="weight-collector"
+                        accept="image/*"
+                        capture="environment"
+                      ></input>
 
-
-                  {/* Camera */}
-                  
+                      {/* Camera */}
                     </Form.Group>
                     {/* <div classname="camera">
                      <video ref={videoref}></video>
@@ -148,13 +147,37 @@ export default () => {
                   {/* Images of waste collected */}
                   <div class="ml-5">
                     <Button class="mx-auto" s>
+                      <input
+                        type="file"
+                        id="weight-collector"
+                        name="weight-collector"
+                        accept="image/*"
+                        capture="environment"
+                      ></input>
+
                       <FontAwesomeIcon icon={faCameraRetro} />
                     </Button>
 
                     <Button>
+                      <input
+                        type="file"
+                        id="weight-collector"
+                        name="weight-collector"
+                        accept="image/*"
+                        capture="environment"
+                      ></input>
+
                       <FontAwesomeIcon icon={faCameraRetro} />
                     </Button>
                     <Button>
+                      <input
+                        type="file"
+                        id="weight-collector"
+                        name="weight-collector"
+                        accept="image/*"
+                        capture="environment"
+                      ></input>
+
                       <FontAwesomeIcon icon={faCameraRetro} />
                     </Button>
                   </div>
