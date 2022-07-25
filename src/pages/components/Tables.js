@@ -2,7 +2,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { Col, Row, Table, Image, Container } from '@themesberg/react-bootstrap';
+import { Col, Row, Table, Image, Container } from 'react-bootstrap';
 
 import Documentation from "../../components/Documentation";
 
@@ -36,7 +36,7 @@ export default () => {
             </>
           }
           scope={{ Image, Table, FontAwesomeIcon, faAngleDown, faAngleUp, USAFlag, CanadaFlag, UKFlag, FranceFlag, JapanFlag, GermanyFlag }}
-          imports={`import { Image, Table } from '@themesberg/react-bootstrap';
+          imports={`import { Image, Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 

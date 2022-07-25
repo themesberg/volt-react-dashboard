@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Row, Col, Card, Container } from '@themesberg/react-bootstrap';
+import { Row, Col, Card, Container } from 'react-bootstrap';
 
 import { CommandsTable } from '../../components/Tables';
 

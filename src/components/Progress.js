@@ -1,5 +1,5 @@
 import React from "react";
-import { ProgressBar } from '@themesberg/react-bootstrap';
+import { ProgressBar } from 'react-bootstrap';
 
 export default (props) => {
   const { label, variant, value, type = "label", size = "md" } = props;

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Row, Col } from '@themesberg/react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 import CodeEditor from "./CodeEditor";
 
