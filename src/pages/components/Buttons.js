@@ -2,7 +2,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faThumbsUp, faAngleDown, faAngleUp, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import { Col, Row, Button, Container, Dropdown, ButtonGroup } from '@themesberg/react-bootstrap';
+import { Col, Row, Button, Container, Dropdown, ButtonGroup } from 'react-bootstrap';
 
 import Documentation from "../../components/Documentation";
 
@@ -26,7 +26,7 @@ export default () => {
             <p>The <code>&#x3C;Button&#x3E;</code> component is an important part of the UI that you can use for user actions. If you want to change the appearance of a given button, you can update the modifier props of the <code>variant</code> attribute.</p>
           }
           scope={{ Button }}
-          imports={`import { Button } from '@themesberg/react-bootstrap';`}
+          imports={`import { Button } from 'react-bootstrap';`}
           example={`<React.Fragment>
   <Button variant="primary" className="m-1">Primary</Button>
   <Button variant="secondary" className="m-1">Secondary</Button>
@@ -48,7 +48,7 @@ export default () => {
             <p>The <code>&#x3C;Button&#x3E;</code> component comes with three main sizing options: <code>sm</code>, default, and <code>lg</code>. In order to change the size of the button you need to set the size using the <code>size</code> attribute.</p>
           }
           scope={{ Button }}
-          imports={`import { Button } from '@themesberg/react-bootstrap';`}
+          imports={`import { Button } from 'react-bootstrap';`}
           example={`<React.Fragment>
   <Button variant="primary" size="sm" className="me-1">Small</Button>
   <Button variant="primary" className="me-1">Regular</Button>
@@ -62,7 +62,7 @@ export default () => {
             <p>Instead of a fully colored background, you can also choose to style the <code>&#x3C;Button&#x3E;</code> component to only have an outline border by using the <code>outline-primary</code>, <code>outline-secondary</code> modifier classes inside the <code>variant</code> attribute.</p>
           }
           scope={{ Button }}
-          imports={`import { Button } from '@themesberg/react-bootstrap';`}
+          imports={`import { Button } from 'react-bootstrap';`}
           example={`<React.Fragment>
   <Button variant="outline-primary" className="m-1">Primary</Button>
   <Button variant="outline-secondary" className="m-1">Secondary</Button>
@@ -81,7 +81,7 @@ export default () => {
             <p>If you want to use the <code>&#x3C;Button&#x3E;</code> component, but without the appearance of a button, just use the <code>bsPrefix="text"</code> attribute to create link styled buttons.</p>
           }
           scope={{ Button }}
-          imports={`import { Button } from '@themesberg/react-bootstrap';`}
+          imports={`import { Button } from 'react-bootstrap';`}
           example={`<React.Fragment>
   <Button bsPrefix="text" href="#primary" variant="primary" className="m-3">Primary</Button>
   <Button bsPrefix="text" href="#secondary" variant="secondary" className="m-3">Secondary</Button>
@@ -100,7 +100,7 @@ export default () => {
             <p>You may want to use icons inside the <code>&#x3C;Button&#x3E;</code> component, which can be done by simply adding a <code>&#x3C;FontAwesomeIcon&#x3E;</code> component inside the button element.</p>
           }
           scope={{ Button, FontAwesomeIcon, faHeart, faThumbsUp }}
-          imports={`import { Button } from '@themesberg/react-bootstrap';
+          imports={`import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faThumbsUp } from "@fortawesome/free-solid-svg-icons";`}
           example={`<React.Fragment>
@@ -119,7 +119,7 @@ import { faHeart, faThumbsUp } from "@fortawesome/free-solid-svg-icons";`}
             <p>Block level buttons are great if you want the button to take up 100% of the width of the parent element. You need to add the <code>w-100</code> class to the component.</p>
           }
           scope={{ Button }}
-          imports={`import { Button } from '@themesberg/react-bootstrap';`}
+          imports={`import { Button } from 'react-bootstrap';`}
           example={`<Button variant="secondary" color="dark" className="w-100">Block</Button>`}
         />
 
@@ -129,7 +129,7 @@ import { faHeart, faThumbsUp } from "@fortawesome/free-solid-svg-icons";`}
             <p>You may want to disable the <code>&#x3C;Button&#x3E;</code> component for various reasons, so you need to add the <code>disabled</code> attribute in order to achieve that.</p>
           }
           scope={{ Button }}
-          imports={`import { Button } from '@themesberg/react-bootstrap';`}
+          imports={`import { Button } from 'react-bootstrap';`}
           example={`<React.Fragment>
   <Button disabled variant="primary" className="mb-2 me-2">
     Primary button
@@ -149,7 +149,7 @@ import { faHeart, faThumbsUp } from "@fortawesome/free-solid-svg-icons";`}
             </>
           }
           scope={{ Button, Dropdown, ButtonGroup, FontAwesomeIcon, faAngleDown }}
-          imports={`import { Button, Dropdown, ButtonGroup } from '@themesberg/react-bootstrap';
+          imports={`import { Button, Dropdown, ButtonGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";`}
           example={`<React.Fragment>
@@ -191,7 +191,7 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";`}
             <p>You may want to use one of the three main sizing options for the <code>&#x3C;Dropdown&#x3E;</code> component, so in order to do that you only need to use the <code>size="md"</code> or <code>size="lg"</code> attributes for the <code>&#x3C;Button&#x3E;</code> component inside the dropdown component.</p>
           }
           scope={{ Button, Dropdown, ButtonGroup, FontAwesomeIcon, faAngleDown }}
-          imports={`import { Button, ButtonGroup, Dropdown } from '@themesberg/react-bootstrap';
+          imports={`import { Button, ButtonGroup, Dropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";`}
           example={`<React.Fragment>
@@ -251,7 +251,7 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";`}
             <p>If you want to change the direction of the <code>&#x3C;Dropdown&#x3E;</code> component, you can do that by using the <code>direction="*"</code> attribute where you can use <code>up</code>, <code>right</code>, <code>down</code>, or <code>left</code> as attribute values.</p>
           }
           scope={{ Button, Dropdown, ButtonGroup, FontAwesomeIcon, faAngleDown, faAngleUp, faAngleLeft, faAngleRight }}
-          imports={`import { Button, ButtonGroup, Dropdown } from '@themesberg/react-bootstrap';
+          imports={`import { Button, ButtonGroup, Dropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";`}
           example={`<React.Fragment>

@@ -3,7 +3,7 @@ import moment from "moment-timezone";
 import Datetime from "react-datetime";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
-import { Col, Row, Card, Form, Container, InputGroup } from '@themesberg/react-bootstrap';
+import { Col, Row, Card, Form, Container, InputGroup } from 'react-bootstrap';
 
 import Documentation from "../../components/Documentation";
 
@@ -26,7 +26,7 @@ export default () => {
             <p>Form elements are an important part of the UI to receive text input from the users. The <code>&#x3C;Form&#x3E;</code> component can be used to create forms, form groups, labels, and input elements inside the UI. Check out the following example for a simple email input field and a textarea field:</p>
           }
           scope={{ Form }}
-          imports={`import { Form } from '@themesberg/react-bootstrap';`}
+          imports={`import { Form } from 'react-bootstrap';`}
           example={`<Form>
   <Form.Group className="mb-3">
     <Form.Label>Email address</Form.Label>
@@ -45,7 +45,7 @@ export default () => {
             <p>You can also add icons to the left or right side of the input field by using the <code>&#x3C;InputGroup&#x3E;</code> component and using the <code>&#x3C;InputGroup.Text&#x3E;</code> element with an icon element inside it, either after or before the <code>&#x3C;Form.Control&#x3E;</code> element.</p>
           }
           scope={{ Form, InputGroup, FontAwesomeIcon, faSearch }}
-          imports={`import { Form, InputGroup } from '@themesberg/react-bootstrap';
+          imports={`import { Form, InputGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";`}
           example={`<Form>
@@ -72,7 +72,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";`}
             <p>You can easily update the styles of a valid or invalid styles input field by using the <code>isValid</code> or <code>isInvalid</code> attributes. Additionally, you can use the <code>&#x3C;Form.Control.Feedback&#x3E;</code> component to write the message regarding the success or error message.</p>
           }
           scope={{ Form }}
-          imports={`import { Form } from '@themesberg/react-bootstrap';`}
+          imports={`import { Form } from 'react-bootstrap';`}
           example={`<Form>
   <Form.Group className="mb-3">
     <Form.Label>Username</Form.Label>
@@ -93,7 +93,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";`}
             <p>The <code>&#x3C;Form.Select&#x3E;</code> component can be used for option selection from the user. You can use the <code>&#x3C;option&#x3E;</code> elements to add multiple options and use the <code>defaultValue</code> attribute to set the default value of the select field.</p>
           }
           scope={{ Form }}
-          imports={`import { Form } from '@themesberg/react-bootstrap';`}
+          imports={`import { Form } from 'react-bootstrap';`}
           example={`<Form>
   <Form.Group className="mb-3">
     <Form.Label>Example select</Form.Label>
@@ -111,7 +111,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";`}
           title="Multiple select"
           description=""
           scope={{ Form }}
-          imports={`import { Form } from '@themesberg/react-bootstrap';`}
+          imports={`import { Form } from 'react-bootstrap';`}
           example={`<Form>
   <Form.Group className="mb-3">
     <Form.Label>Example multiple select</Form.Label>
@@ -131,7 +131,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";`}
             <p>You can create a textarea input field by adding the <code>as="textarea"</code> modifier attribute to the <code>&#x3C;Form.Control&#x3E;</code> component.</p>
           }
           scope={{ Form }}
-          imports={`import { Form } from '@themesberg/react-bootstrap';`}
+          imports={`import { Form } from 'react-bootstrap';`}
           example={`<Form>
   <Form.Group>
     <Form.Label>Example textarea</Form.Label>
@@ -146,7 +146,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";`}
             <p>If you want to use an input field to upload files, you need to add the <code>type="file"</code> attribute to the <code>&#x3C;Form.Control&#x3E;</code> component.</p>
           }
           scope={{ Form }}
-          imports={`import { Form } from '@themesberg/react-bootstrap';`}
+          imports={`import { Form } from 'react-bootstrap';`}
           example={`<Form>
   <Form.Control type="file" />
 </Form>`}
@@ -161,7 +161,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";`}
             </>
           }
           scope={{ Form }}
-          imports={`import { Form } from '@themesberg/react-bootstrap';`}
+          imports={`import { Form } from 'react-bootstrap';`}
           example={`<Form>
   <Form.Check label="Default checkbox" id="checkbox1" htmlFor="checkbox1" />
   <Form.Check disabled label="Disabled checkbox" id="checkbox2" htmlFor="checkbox2" />
@@ -177,7 +177,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";`}
             </>
           }
           scope={{ Form }}
-          imports={`import { Form } from '@themesberg/react-bootstrap';`}
+          imports={`import { Form } from 'react-bootstrap';`}
           example={`<Form>
   <fieldset>
     <Form.Check
@@ -219,7 +219,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";`}
           }
           scope={{ Datetime, Form, InputGroup, FontAwesomeIcon, faCalendarAlt, moment }}
           imports={`import React, { useState } from "react";
-import { Form, InputGroup } from '@themesberg/react-bootstrap';
+import { Form, InputGroup } from 'react-bootstrap';
 import Datetime from "react-datetime";
 import moment from "moment-timezone";
 

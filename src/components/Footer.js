@@ -1,7 +1,7 @@
 
 import React from "react";
 import moment from "moment-timezone";
-import { Row, Col, Card, OverlayTrigger, Tooltip, Image, Button } from '@themesberg/react-bootstrap';
+import { Row, Col, Card, OverlayTrigger, Tooltip, Image, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCogs, faDownload, faRocket } from "@fortawesome/free-solid-svg-icons";
 import BS5Logo from "../assets/img/technologies/bootstrap-5-logo.svg";

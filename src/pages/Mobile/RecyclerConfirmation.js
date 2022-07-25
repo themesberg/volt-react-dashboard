@@ -14,11 +14,11 @@ import {
     Button,
     FormCheck,
     Container,
-} from "@themesberg/react-bootstrap";
+} from "react-bootstrap";
 
 import { Routes } from "../../routes";
 import BgImage from "../../assets/img/illustrations/signin.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
     faCameraRetro,
     faWeightHanging,
@@ -64,7 +64,7 @@ export default () => {
                             to={Routes.DashboardOverview.path}
                             className="text-gray-700"
                         >
-                            <FontAwesomeIcon icon={faAngleLeft} className="me-2" /> Back to
+                            Back to
                             homepage
                         </Card.Link>
                     </p>
@@ -103,7 +103,7 @@ export default () => {
                                         <Form.Label>Weight of Waste Received (in Kgs)</Form.Label>
                                         <InputGroup>
                                             <InputGroup.Text>
-                                                <FontAwesomeIcon icon={faWeightHanging} />
+                                            
                                             </InputGroup.Text>
 
                                             <Form.Control
@@ -123,7 +123,7 @@ export default () => {
                                                     capture="environment"
                                                 ></input>
 
-                                                <FontAwesomeIcon icon={faCameraRetro} />
+                                     
                                             </Button>
                                         </div>
                                         {/* Camera */}
@@ -157,7 +157,7 @@ export default () => {
                                                     capture="environment"
                                                 ></input>
 
-                                                <FontAwesomeIcon icon={faCameraRetro} />
+                                          
                                             </Button>
                                         </div>
                                         {/* Camera */}
@@ -184,7 +184,7 @@ export default () => {
                                                 capture="environment"
                                             ></input>
 
-                                            <FontAwesomeIcon icon={faCameraRetro} />
+                                    
                                         </Button>
 
 

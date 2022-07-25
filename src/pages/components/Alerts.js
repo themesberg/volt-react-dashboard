@@ -2,7 +2,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullhorn } from '@fortawesome/free-solid-svg-icons';
-import { Col, Row, Alert, Button, Container } from '@themesberg/react-bootstrap';
+import { Col, Row, Alert, Button, Container } from 'react-bootstrap';
 
 import Documentation from "../../components/Documentation";
 
@@ -25,7 +25,7 @@ export default () => {
             <p>The <code>&#x3C;Alert&#x3E;</code> component can be used to show your users error, success, informational or warning messages. Use component properties such as  <code>variant="primary</code> or <code>variant="secondary"</code> to use the colors from the Sass variables:</p>
           }
           scope={{ Alert }}
-          imports={`import { Alert } from '@themesberg/react-bootstrap';`}
+          imports={`import { Alert } from 'react-bootstrap';`}
           example={`<React.Fragment>
   <Alert variant="primary">
     A simple primary alert — check it out!
@@ -60,7 +60,7 @@ export default () => {
             <p>The <code>&#x3C;Alert&#x3E;</code> component can be used to create an alert component that can be closed by clicking on the close icon by adding the <code>show</code> and <code>onClose</code> properties. Additionally, you can also use the <code>&#x3C;FontAwesomeIcon&#x3E;</code> component to add an icon inside the alert component.</p>
           }
           scope={{ Alert, Button, FontAwesomeIcon, faBullhorn }}
-          imports={`import { Alert, Button } from '@themesberg/react-bootstrap';
+          imports={`import { Alert, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBullhorn } from "@fortawesome/free-solid-svg-icons";`}
           example={`function DismissableAlerts() {

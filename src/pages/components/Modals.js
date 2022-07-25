@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Row, Col, Card, Modal, Button, Container } from '@themesberg/react-bootstrap';
+import { Row, Col, Card, Modal, Button, Container } from 'react-bootstrap';
 
 import Documentation from "../../components/Documentation";
 
@@ -33,7 +33,7 @@ export default () => {
               }
               scope={{ Col, Card, Button, Modal, showDefault, setShowDefault, handleClose, useState }}
               imports={`import React, { useState } from "react";
-import { Button, Modal } from '@themesberg/react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 
 const [showDefault, setShowDefault] = useState(false);
 const handleClose = () => setShowDefault(false);`}

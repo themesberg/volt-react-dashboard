@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Col, Row, Button, Tooltip, Container, OverlayTrigger } from '@themesberg/react-bootstrap';
+import { Col, Row, Button, Tooltip, Container, OverlayTrigger } from 'react-bootstrap';
 
 import Documentation from "../../components/Documentation";
 
@@ -24,7 +24,7 @@ export default () => {
             <p>Use the <code>&#x3C;OverlayTrigger&#x3E;</code> and <code>&#x3C;Tooltip&#x3E;</code> to show extra information when hovering or clicking on a given element. Make sure to wrap both the triggering element (ie. a button) and the <code>&#x3C;Tooltip&#x3E;</code> component in a <code>&#x3C;OverlayTrigger&#x3E;</code> component.</p>
           }
           scope={{ Button, Tooltip, OverlayTrigger }}
-          imports={`import { Button, Tooltip, OverlayTrigger } from '@themesberg/react-bootstrap';`}
+          imports={`import { Button, Tooltip, OverlayTrigger } from 'react-bootstrap';`}
           example={`<OverlayTrigger
   trigger={['hover', 'focus']}
   overlay={
@@ -40,7 +40,7 @@ export default () => {
             <p>You can also easily position the <code>&#x3C;Tooltip&#x3E;</code> component in any direction using the <code>placement="*"</code> attribute, where the value can be <code>top</code>, <code>right</code>, <code>bottom</code> or <code>left</code>.</p>
           }
           scope={{ Button, Tooltip, OverlayTrigger }}
-          imports={`import { Button, Tooltip, OverlayTrigger } from '@themesberg/react-bootstrap';`}
+          imports={`import { Button, Tooltip, OverlayTrigger } from 'react-bootstrap';`}
           example={`<React.Fragment>
   <OverlayTrigger
     placement="top"

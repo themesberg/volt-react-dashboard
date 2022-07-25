@@ -6,6 +6,9 @@ import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import { Scales, CaretDown } from "phosphor-react";
+
+
 
 import {
   faFacebookF,
@@ -19,7 +22,7 @@ import {
   Button,
   FormCheck,
   Container,
-} from "@themesberg/react-bootstrap";
+} from "react-bootstrap";
 
 import { Routes } from "../../routes";
 import BgImage from "../../assets/img/illustrations/signin.svg";
@@ -100,7 +103,7 @@ export default () => {
                       <Form.Label>Weight of Collected waste</Form.Label>
                       <InputGroup>
                         <InputGroup.Text>
-                          <FontAwesomeIcon icon={faWeightHanging} />
+                        <Scales size={32} />
                         </InputGroup.Text>
 
                         <Form.Control
@@ -150,9 +153,11 @@ export default () => {
                   <Form.Group id="typeOfPlastic" className="mb-4">
                     <Form.Label>Type of Plastic Collected</Form.Label>
                     <InputGroup>
+                  
+                 
                       <DropdownButton
                         variant="outline-secondary"
-                        title="Dropdown"
+                       
                         id="input-group-dropdown-2"
                         align="end"
                       >
@@ -181,8 +186,8 @@ export default () => {
                     </InputGroup>
                   </Form.Group>
                   {/* Images of waste collected */}
-                  <div class="ml-5">
-                    <Button class="mx-auto" s>
+                  <div>
+         
                       <input
                         type="file"
                         id="weight-collector"
@@ -191,10 +196,10 @@ export default () => {
                         capture="environment"
                       ></input>
 
-                      <FontAwesomeIcon icon={faCameraRetro} />
-                    </Button>
+                     
+     
 
-                    <Button>
+         
                       <input
                         type="file"
                         id="weight-collector"
@@ -203,9 +208,7 @@ export default () => {
                         capture="environment"
                       ></input>
 
-                      <FontAwesomeIcon icon={faCameraRetro} />
-                    </Button>
-                    <Button>
+               
                       <input
                         type="file"
                         id="weight-collector"
@@ -214,8 +217,7 @@ export default () => {
                         capture="environment"
                       ></input>
 
-                      <FontAwesomeIcon icon={faCameraRetro} />
-                    </Button>
+   
                   </div>
                   {/* Vehicle No. */}
                   <Form.Group id="vehivle" className="mb-4">

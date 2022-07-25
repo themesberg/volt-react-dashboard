@@ -3,7 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode, faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
-import { Col, Row, Nav, Tab, Card, Container } from '@themesberg/react-bootstrap';
+import { Col, Row, Nav, Tab, Card, Container } from 'react-bootstrap';
 
 import Documentation from "../../components/Documentation";
 
@@ -30,7 +30,7 @@ export default () => {
             </>
           }
           scope={{ Nav, Tab }}
-          imports={`import { Nav, Tab } from '@themesberg/react-bootstrap';`}
+          imports={`import { Nav, Tab } from 'react-bootstrap';`}
           example={`<Tab.Container defaultActiveKey="home">
   <Nav fill variant="pills" className="flex-column flex-sm-row">
     <Nav.Item>
@@ -84,7 +84,7 @@ export default () => {
             <p>The following example shows how you can add an icon using the <code>&#x3C;FontAwesomeIcon&#x3E;</code> component inside the navigation item component.</p>
           }
           scope={{ Row, Col, Nav, Tab, FontAwesomeIcon, faPalette, faLaptopCode, faUser }}
-          imports={`import { Row, Col, Nav, Tab } from '@themesberg/react-bootstrap';
+          imports={`import { Row, Col, Nav, Tab } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode, faPalette } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";`}
@@ -143,7 +143,7 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";`}
           title="Classic"
           description=""
           scope={{ Col, Row, Card, Nav, Tab }}
-          imports={`import { Col, Row, Card, Nav, Tab } from '@themesberg/react-bootstrap';`}
+          imports={`import { Col, Row, Card, Nav, Tab } from 'react-bootstrap';`}
           example={`<Tab.Container defaultActiveKey="home">
   <Row>
     <Col lg={12}>

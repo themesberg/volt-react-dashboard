@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
-import { Col, Row, Card, Toast, Button, Container } from '@themesberg/react-bootstrap';
+import { Col, Row, Card, Toast, Button, Container } from 'react-bootstrap';
 
 import Documentation from "../../components/Documentation";
 
@@ -38,7 +38,7 @@ export default () => {
           }
           scope={{ Card, Toast, Button, useState, FontAwesomeIcon, faBootstrap, showDefault, setShowDefault, handleCloseDefault }}
           imports={`import React, { useState } from 'react';
-import { Card, Toast, Button } from '@themesberg/react-bootstrap';
+import { Card, Toast, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
 
@@ -64,7 +64,7 @@ const toggleDefaultToast = () => setShowDefault(!showDefault);`}
           }
           scope={{ Toast, Button, useState, FontAwesomeIcon, faBootstrap, showPrimary, setShowPrimary, handleClosePrimary, showTertiary, setShowTertiary, handleCloseTertiary }}
           imports={`import React, { useState } from 'react';
-import { Toast, Button } from '@themesberg/react-bootstrap';
+import { Toast, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
 

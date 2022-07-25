@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Row, Col, Card, Container, Alert } from '@themesberg/react-bootstrap';
+import { Row, Col, Card, Container, Alert } from 'react-bootstrap';
 
 import Code from "../../components/Code";
 
