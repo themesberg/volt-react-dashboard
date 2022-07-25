@@ -1,9 +1,8 @@
-
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faEnvelope, faUnlockAlt } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { Col, Row, Form, Card, Button, FormCheck, Container, InputGroup } from '@themesberg/react-bootstrap';
+import { Col, Row, Form, Card, Button, FormCheck, Container, InputGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Routes } from "../../routes";
 import BgImage from "../../assets/img/illustrations/signin.svg";
@@ -102,9 +101,48 @@ export default () => {
                 </div>
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
-                    Not registered?
+                 
                     <Card.Link as={Link} to={Routes.Signup.path} className="fw-bold">
-                      {` Create account `}
+                      {` Sign Up `}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+                 
+                    <Card.Link as={Link} to={Routes.CollectorInput.path} className="fw-bold">
+                      {` Collector Input `}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+                    <Card.Link as={Link} to={Routes.RecyclerConfirmation.path} className="fw-bold">
+                      {` Recycler Confirmation`}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+             
+                    <Card.Link as={Link} to={Routes.RecyclerInput.path} className="fw-bold">
+                      {`Recycler Input`}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+
+                    <Card.Link as={Link} to={Routes.ManufacturingProcess.path} className="fw-bold">
+                      {` Manufacturer Confirmation `}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+                   
+                    <Card.Link as={Link} to={Routes.GSTBill.path} className="fw-bold">
+                      {` GST Bill `}
                     </Card.Link>
                   </span>
                 </div>

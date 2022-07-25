@@ -2,7 +2,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { Col, Row, Image, Button, Container } from '@themesberg/react-bootstrap';
+import { Col, Row, Image, Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import { Routes } from "../../routes";

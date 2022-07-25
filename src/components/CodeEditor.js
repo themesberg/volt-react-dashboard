@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { Col, Row, Card, Button, Tooltip, OverlayTrigger } from '@themesberg/react-bootstrap';
+import { Col, Row, Card, Button, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';

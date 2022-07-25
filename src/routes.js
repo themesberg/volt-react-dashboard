@@ -9,13 +9,20 @@ export const Routes = {
     BootstrapTables: { path: "/tables/bootstrap-tables" },
     Billing: { path: "/examples/billing" },
     Invoice: { path: "/examples/invoice" },
-    Signin: { path: "/examples/sign-in" },
-    Signup: { path: "/examples/sign-up" },
+    Signin: { path: "/mobile/sign-in" },
+    Signup: { path: "/mobile/sign-up" },
     ForgotPassword: { path: "/examples/forgot-password" },
     ResetPassword: { path: "/examples/reset-password" },
     Lock: { path: "/examples/lock" },
     NotFound: { path: "/examples/404" },
     ServerError: { path: "/examples/500" },
+    
+    // mobile
+    CollectorInput: { path: "/mobile/collector-input" },
+    RecyclerConfirmation: { path: "/mobile/recycler-confirmation" },
+    RecyclerInput: { path: "/mobile//recycler-input" },
+    ManufacturingProcess: { path: "/mobile/manufacturing-process" },
+    GSTBill: { path: "/mobile/gst" },
 
     // docs
     DocsOverview: { path: "/documentation/overview" },

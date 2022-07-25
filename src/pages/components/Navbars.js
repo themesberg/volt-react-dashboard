@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { Nav, Row, Col, Card, Image, Navbar, Container } from '@themesberg/react-bootstrap';
+import { Nav, Row, Col, Card, Image, Navbar, Container } from 'react-bootstrap';
 
 import Documentation from "../../components/Documentation";
 import ReactLogoPrimary from "../../assets/img/technologies/react-logo-primary.svg";
@@ -24,7 +24,7 @@ export default () => {
           title="Navbar"
           description=""
           scope={{ Nav, Card, Navbar, Container, ReactLogo: ReactLogoTransparent, Image }}
-          imports={`import { Nav, Card, Navbar, Container } from '@themesberg/react-bootstrap';
+          imports={`import { Nav, Card, Navbar, Container } from 'react-bootstrap';
 
 import ReactLogo from "src/assets/img/technologies/react-logo-transparent.svg";`}
           example={`<Navbar variant="dark" expand="lg" bg="dark" className="navbar-transparent navbar-theme-primary my-2">
@@ -51,7 +51,7 @@ import ReactLogo from "src/assets/img/technologies/react-logo-transparent.svg";`
           description=""
           scope={{ useEffect, useState, Nav, Card, Navbar, Image, Container, ReactLogoPrimary, ReactLogo: ReactLogoTransparent }}
           imports={`import React, { useEffect, useState } from "react";
-import { Nav, Card, Navbar, Container } from '@themesberg/react-bootstrap';
+import { Nav, Card, Navbar, Container } from 'react-bootstrap';
 import ReactLogo from "src/assets/img/technologies/react-logo-transparent.svg";
 import ReactLogoPrimary from "src/assets/img/technologies/react-logo-primary.svg";`}
           example={`const NavbarThemes = [

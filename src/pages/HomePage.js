@@ -9,14 +9,11 @@ import DashboardOverview from "./dashboard/DashboardOverview";
 import Transactions from "./Transactions";
 import Settings from "./Settings";
 import BootstrapTables from "./tables/BootstrapTables";
-import Signin from "./examples/Signin";
-import Signup from "./examples/Signup";
 import ForgotPassword from "./examples/ForgotPassword";
 import ResetPassword from "./examples/ResetPassword";
 import Lock from "./examples/Lock";
 import NotFoundPage from "./examples/NotFound";
 import ServerError from "./examples/ServerError";
-
 // documentation pages
 import DocsOverview from "./documentation/DocsOverview";
 import DocsDownload from "./documentation/DocsDownload";
@@ -48,6 +45,15 @@ import Tables from "./components/Tables";
 import Tabs from "./components/Tabs";
 import Tooltips from "./components/Tooltips";
 import Toasts from "./components/Toasts";
+
+//new pages
+import CollectorInput from './Mobile/CollectorInput';
+import RecyclerConfirmation from './Mobile/RecyclerConfirmation'; 
+import ManufacturingProcess from './Mobile/ManufacturingProcess';
+import RecyclerInput from './Mobile/RecyclerInput';
+import GSTBill from './Mobile/GSTBill';
+import Signin from "./Mobile/Signin";
+import Signup from "./Mobile/Signup";
 
 const RouteWithLoader = ({ component: Component, ...rest }) => {
   const [loaded, setLoaded] = useState(false);
@@ -103,12 +109,16 @@ export default () => (
     <RouteWithLoader exact path={Routes.Presentation.path} component={Presentation} />
     <RouteWithLoader exact path={Routes.Signin.path} component={Signin} />
     <RouteWithLoader exact path={Routes.Signup.path} component={Signup} />
+    <RouteWithLoader exact path={Routes.CollectorInput.path} component={CollectorInput} />
+    <RouteWithLoader exact path={Routes.RecyclerConfirmation.path} component={RecyclerConfirmation} />
+    <RouteWithLoader exact path={Routes.ManufacturingProcess.path} component={ManufacturingProcess} />
+    <RouteWithLoader exact path={Routes.RecyclerInput.path} component={RecyclerInput} />
+    <RouteWithLoader exact path={Routes.GSTBill.path} component={GSTBill} />
     <RouteWithLoader exact path={Routes.ForgotPassword.path} component={ForgotPassword} />
     <RouteWithLoader exact path={Routes.ResetPassword.path} component={ResetPassword} />
     <RouteWithLoader exact path={Routes.Lock.path} component={Lock} />
     <RouteWithLoader exact path={Routes.NotFound.path} component={NotFoundPage} />
     <RouteWithLoader exact path={Routes.ServerError.path} component={ServerError} />
-
     {/* pages */}
     <RouteWithSidebar exact path={Routes.DashboardOverview.path} component={DashboardOverview} />
     <RouteWithSidebar exact path={Routes.Upgrade.path} component={Upgrade} />

@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { Card, Button, Tooltip, OverlayTrigger } from '@themesberg/react-bootstrap';
+import { Card, Button, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import Highlight, { Prism } from 'prism-react-renderer';
 
 import themeStyle from "../assets/syntax-themes/ghcolors.json";

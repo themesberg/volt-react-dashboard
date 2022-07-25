@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Col, Row, Button, Popover, Container, OverlayTrigger } from '@themesberg/react-bootstrap';
+import { Col, Row, Button, Popover, Container, OverlayTrigger } from 'react-bootstrap';
 
 import Documentation from "../../components/Documentation";
 
@@ -24,7 +24,7 @@ export default () => {
             <p>The <code>&#x3C;OverlayTrigger&#x3E;</code> and <code>&#x3C;Popover&#x3E;</code> component can be used to show extra information by clicking on a given element. You can set the title and content using the <code>&#x3C;Popover.Title&#x3E;</code> and <code>&#x3C;Popover.Content&#x3E;</code> subcomponents. Make sure you wrap the <code>&#x3C;OverlayTrigger&#x3E;</code> component around the popover and the element that will trigger the event.</p>
           }
           scope={{ Button, Popover, OverlayTrigger }}
-          imports={`import { Button, Popover, OverlayTrigger } from '@themesberg/react-bootstrap';`}
+          imports={`import { Button, Popover, OverlayTrigger } from 'react-bootstrap';`}
           example={`<OverlayTrigger
   trigger="click"
   overlay={
@@ -43,7 +43,7 @@ export default () => {
             <p>The <code>&#x3C;Popover&#x3E;</code> can also be positioned accordingly, using the <code>placement="*"</code> attribute, where the value can be either <code>top</code>, <code>right</code>, <code>bottom</code> or <code>left</code>.</p>
           }
           scope={{ Button, Popover, OverlayTrigger }}
-          imports={`import { Button, Popover, OverlayTrigger } from '@themesberg/react-bootstrap';`}
+          imports={`import { Button, Popover, OverlayTrigger } from 'react-bootstrap';`}
           example={`<React.Fragment>
   <OverlayTrigger
     placement="top"

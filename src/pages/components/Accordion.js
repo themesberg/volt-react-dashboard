@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Row, Col, Container } from '@themesberg/react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 
 import AccordionComponent from "../../components/AccordionComponent";
 import Documentation from "../../components/Documentation";
