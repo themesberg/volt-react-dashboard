@@ -19,7 +19,7 @@ import {
   Button,
   FormCheck,
   Container,
-} from "@themesberg/react-bootstrap";
+} from "react-bootstrap";
 
 import { Routes } from "../../routes";
 import BgImage from "../../assets/img/illustrations/signin.svg";

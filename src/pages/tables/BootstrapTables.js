@@ -2,7 +2,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { Breadcrumb } from '@themesberg/react-bootstrap';
+import { Breadcrumb } from 'react-bootstrap';
 
 import { PageTrafficTable, RankingTable } from "../../components/Tables";
 
