@@ -23,7 +23,6 @@ import {
 
 import { Routes } from "../../routes";
 import BgImage from "../../assets/img/illustrations/signin.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCameraRetro,
   faWeightHanging,
@@ -75,8 +74,7 @@ export default () => {
               to={Routes.DashboardOverview.path}
               className="text-gray-700"
             >
-              <FontAwesomeIcon icon={faAngleLeft} className="me-2" /> Back to
-              homepage
+              Back to homepage
             </Card.Link>
           </p>
           <Row
@@ -100,7 +98,7 @@ export default () => {
                       <Form.Label>Weight of Collected waste</Form.Label>
                       <InputGroup>
                         <InputGroup.Text>
-                          <FontAwesomeIcon icon={faWeightHanging} />
+                  
                         </InputGroup.Text>
 
                         <Form.Control
@@ -134,7 +132,7 @@ export default () => {
                       className="btn-icon-only btn-pil text-dark"
                     >
                       SNAP!
-                      <FontAwesomeIcon icon={faCameraRetro} />
+                   
                     </Button>
                     </div>
                     <div classname={'result' + (hasPhoto ? 'hasPhoto' : '')}>
@@ -191,7 +189,7 @@ export default () => {
                         capture="environment"
                       ></input>
 
-                      <FontAwesomeIcon icon={faCameraRetro} />
+                    
                     </Button>
 
                     <Button>
@@ -203,7 +201,7 @@ export default () => {
                         capture="environment"
                       ></input>
 
-                      <FontAwesomeIcon icon={faCameraRetro} />
+                   
                     </Button>
                     <Button>
                       <input
@@ -214,7 +212,7 @@ export default () => {
                         capture="environment"
                       ></input>
 
-                      <FontAwesomeIcon icon={faCameraRetro} />
+                  
                     </Button>
                   </div>
                   {/* Vehicle No. */}
