@@ -60,7 +60,7 @@ export default () => {
       fileDisplayArea.innerHTML = "File not supported!";
     }
     });
-}
+  }
 
   
 
