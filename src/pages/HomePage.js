@@ -9,8 +9,6 @@ import DashboardOverview from "./dashboard/DashboardOverview";
 import Transactions from "./Transactions";
 import Settings from "./Settings";
 import BootstrapTables from "./tables/BootstrapTables";
-import Signin from "./examples/Signin";
-import Signup from "./examples/Signup";
 import ForgotPassword from "./examples/ForgotPassword";
 import ResetPassword from "./examples/ResetPassword";
 import Lock from "./examples/Lock";
@@ -47,11 +45,15 @@ import Tables from "./components/Tables";
 import Tabs from "./components/Tabs";
 import Tooltips from "./components/Tooltips";
 import Toasts from "./components/Toasts";
+
+//new pages
 import CollectorInput from './Mobile/CollectorInput';
 import RecyclerConfirmation from './Mobile/RecyclerConfirmation'; 
 import ManufacturingProcess from './Mobile/ManufacturingProcess';
 import RecyclerInput from './Mobile/RecyclerInput';
 import GSTBill from './Mobile/GSTBill';
+import Signin from "./Mobile/Signin";
+import Signup from "./Mobile/Signup";
 
 const RouteWithLoader = ({ component: Component, ...rest }) => {
   const [loaded, setLoaded] = useState(false);
