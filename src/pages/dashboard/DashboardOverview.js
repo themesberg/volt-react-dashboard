@@ -1,22 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCashRegister,
-  faChartLine,
-  faCloudUploadAlt,
-  faPlus,
-  faRocket,
-  faTasks,
-  faUserShield,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  Col,
-  Row,
-  Button,
-  Dropdown,
-  ButtonGroup,
-} from "react-bootstrap";
-import { Horse, Heart, Cube } from "phosphor-react";
+
+import { Col, Row, Button, Dropdown, ButtonGroup } from "react-bootstrap";
+import { Horse, Heart, Cube, Plus, CurrencyBtc } from "phosphor-react";
 
 import {
   CounterWidget,
@@ -33,9 +18,15 @@ import { PageVisitsTable } from "../../components/Tables";
 import { trafficShares, totalOrders } from "../../data/charts";
 
 export default () => {
+ 
+
+  // var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  const current = new Date();
+  const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
   return (
     <>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+       
         <Dropdown className="btn-toolbar">
           <Dropdown.Toggle
             as={Button}
@@ -43,126 +34,64 @@ export default () => {
             size="sm"
             className="me-2"
           >
-            
-              <Horse />
-              
-            
-            something Task
+            <Plus size={28} />
+         
           </Dropdown.Toggle>
           <Dropdown.Menu className="dashboard-dropdown dropdown-menu-left mt-2">
             <Dropdown.Item className="fw-bold">
-              <FontAwesomeIcon icon={faTasks} className="me-2" /> New Task
+            <Plus size={28} />
+          Create a New CGP cycle
             </Dropdown.Item>
             <Dropdown.Item className="fw-bold">
-              <FontAwesomeIcon icon={faCloudUploadAlt} className="me-2" />{" "}
-              Upload Files
+              {" "}
+          Update CGP cycle
             </Dropdown.Item>
             <Dropdown.Item className="fw-bold">
-              <FontAwesomeIcon icon={faUserShield} className="me-2" /> Preview
-              Security
+              Upload GST Bill
             </Dropdown.Item>
 
             <Dropdown.Divider />
 
-            {/* <Dropdown.Item className="fw-bold">
-              <FontAwesomeIcon icon={faRocket} className="text-danger me-2" /> Upgrade to Pro
-            </Dropdown.Item> */}
+           
           </Dropdown.Menu>
         </Dropdown>
 
         <ButtonGroup>
           <Button variant="outline-primary" size="sm">
-            Share
+            <plus/>
+            Create  a New CGP cycle
           </Button>
-          <Button variant="outline-primary" size="sm">
-            Export
-          </Button>
+          
         </ButtonGroup>
       </div>
 
       <Row className="justify-content-md-center">
         <Col xs={12} className="mb-4 d-none d-sm-block">
-          <SalesValueWidget
-            title="Sales Value"
-            value="10,567"
-            percentage={10.57}
-          />
+        
         </Col>
-        <Col xs={12} className="mb-4 d-sm-none">
-          <SalesValueWidgetPhone
-            title="Sales Value"
-            value="10,567"
-            percentage={10.57}
-          />
-        </Col>
+   
         <Col xs={12} sm={6} xl={4} className="mb-4">
           <CounterWidget
-            category="Customers"
-            title="345k"
-            period="Feb 1 - Apr 1"
-            percentage={18.2}
-            icon={faChartLine}
-            iconColor="shape-secondary"
+            category="Good Morning, John "
+            title=  {date}
+           
           />
         </Col>
 
         <Col xs={12} sm={6} xl={4} className="mb-4">
           <CounterWidget
-            category="Revenue"
-            title="$43,594"
-            period="Feb 1 - Apr 1"
-            percentage={28.4}
-            icon={faCashRegister}
-            iconColor="shape-tertiary"
+            category="Cycle 1"
+          
           />
         </Col>
 
-        <Col xs={12} sm={6} xl={4} className="mb-4">
-          <CircleChartWidget title="Traffic Share" data={trafficShares} />
-        </Col>
+  
       </Row>
-
+<button>
+  <Horse size={28} />
+</button>
       <Row>
-        <Col xs={12} xl={12} className="mb-4">
-          <Row>
-            <Col xs={12} xl={8} className="mb-4">
-              <Row>
-                <Col xs={12} className="mb-4">
-                  <PageVisitsTable />
-                </Col>
-
-                <Col xs={12} lg={6} className="mb-4">
-                  <TeamMembersWidget />
-                </Col>
-
-                <Col xs={12} lg={6} className="mb-4">
-                  <ProgressTrackWidget />
-                </Col>
-              </Row>
-            </Col>
-
-            <Col xs={12} xl={4}>
-              <Row>
-                <Col xs={12} className="mb-4">
-                  <BarChartWidget
-                    title="Total orders"
-                    value={452}
-                    percentage={18.2}
-                    data={totalOrders}
-                  />
-                </Col>
-
-                <Col xs={12} className="px-0 mb-4">
-                  <RankingWidget />
-                </Col>
-
-                <Col xs={12} className="px-0">
-                  <AcquisitionWidget />
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Col>
+      
       </Row>
     </>
   );
