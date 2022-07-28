@@ -1,7 +1,6 @@
 
 import React from "react";
 import moment from "moment-timezone";
-
 import { Row, Col, Card, OverlayTrigger, Tooltip, Image, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCogs, faDownload, faRocket } from "@fortawesome/free-solid-svg-icons";
@@ -20,7 +19,6 @@ export default (props) => {
   const toggleSettings = (toggle) => {
     props.toggleSettings(toggle);
   }
-  const Tab = createBottomTabNavigator();
 
   return (
     <div>
@@ -59,9 +57,7 @@ export default (props) => {
           
         
         </Row>
-    
       </footer>
-      
     </div>
   );
 };

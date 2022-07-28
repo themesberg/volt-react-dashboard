@@ -55,14 +55,15 @@ export default (props) => {
       <Container fluid className="px-0">
         <div className="d-flex justify-content-between w-100">
           <div className="d-flex align-items-center">
-     
-          <Button variant="outline-primary" size="sm">
-            <plus/>
-            Create  a New CGP cycle
-          </Button>
-          
       
-           
+            <Form className="navbar-search">
+              <Form.Group id="topbarSearch">
+                <InputGroup className="input-group-merge search-bar">
+                  <InputGroup.Text><FontAwesomeIcon icon={faSearch} /></InputGroup.Text>
+                  <Form.Control type="text" placeholder="Clean" />
+                </InputGroup>
+              </Form.Group>
+            </Form>
           </div>
           <Nav className="align-items-center">
             <Dropdown as={Nav.Item} onToggle={markNotificationsAsRead} >

@@ -70,6 +70,20 @@ export default () => {
         
         </Col>
    
+        <Col xs={12} sm={6} xl={4} className="mb-4">
+          <CounterWidget
+            category="Good Morning, John "
+            title=  {date}
+           
+          />
+        </Col>
+
+        <Col xs={12} sm={6} xl={4} className="mb-4">
+          <CounterWidget
+            category="Cycle 1"
+          
+          />
+        </Col>
 
   
       </Row>
