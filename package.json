@@ -29,7 +29,6 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.17",
-   
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -53,6 +52,7 @@
     "react-scripts": "^5.0.1",
     "react-transition-group": "^4.4.1",
     "react-webcam": "^7.0.1",
+    "reactjs-bottom-navigation": "^1.0.4",
     "sass": "^1.52.3",
     "simplebar-react": "^2.3.0"
   },
