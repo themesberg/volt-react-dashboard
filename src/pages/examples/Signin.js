@@ -1,4 +1,3 @@
-
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faEnvelope, faUnlockAlt } from "@fortawesome/free-solid-svg-icons";
@@ -54,8 +53,11 @@ export default () => {
                       <Card.Link className="small text-end">Lost password?</Card.Link>
                     </div>
                   </Form.Group>
-                  <Button variant="primary" type="submit" className="w-100">
+                  {/* <Button variant="primary" type="submit" className="w-100">
                     Sign in
+                  </Button> */}
+                  <Button variant="primary" as={Link} to={Routes.DashboardOverview.path} className="w-100">
+                  Login 
                   </Button>
                 </Form>
 
@@ -75,9 +77,40 @@ export default () => {
                 </div>
                 <div className="d-flex justify-content-center align-items-center mt-4">
                   <span className="fw-normal">
-                    Not registered?
-                    <Card.Link as={Link} to={Routes.Signup.path} className="fw-bold">
-                      {` Create account `}
+                 
+                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
+                      {` Collector `}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+                    <Card.Link as={Link} to={Routes.RecyclerConfirmation.path} className="fw-bold">
+                      {` Recycler Confirmation`}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+             
+                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
+                      {`Recycler Input`}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+
+                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
+                      {` Manufacturer Confirmation `}
+                    </Card.Link>
+                  </span>
+                </div>
+                <div className="d-flex justify-content-center align-items-center mt-4">
+                  <span className="fw-normal">
+                   
+                    <Card.Link as={Link} to={Routes.Collector.path} className="fw-bold">
+                      {` GST bill `}
                     </Card.Link>
                   </span>
                 </div>

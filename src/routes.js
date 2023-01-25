@@ -11,6 +11,8 @@ export const Routes = {
     Invoice: { path: "/examples/invoice" },
     Signin: { path: "/examples/sign-in" },
     Signup: { path: "/examples/sign-up" },
+    Collector: { path: "/Mobile/collector_input" },
+    RecyclerConfirmation: { path: "/Mobile/recycler-confirmation" },
     ForgotPassword: { path: "/examples/forgot-password" },
     ResetPassword: { path: "/examples/reset-password" },
     Lock: { path: "/examples/lock" },

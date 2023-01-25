@@ -19,6 +19,11 @@ import ReactMockupImg from "../assets/img/react-mockup.png";
 import BS5IllustrationsImg from "../assets/img/illustrations/bs5-illustrations.svg";
 import BS5Logo from "../assets/img/technologies/bootstrap-5-logo.svg";
 import ReactLogo from "../assets/img/technologies/react-logo.svg";
+import CryptoCapableLogo from "../assets/img/crypto-capable-logo.png";
+import DSTLogo from "../assets/img/dst-logo.jpg";
+import IndiaAccLogo from "../assets/img/india-accelerator-logo.png";
+import NearLogo from "../assets/img/near-logo.png";
+import SineLogo from "../assets/img/sine-iitb-logo.png";
 
 import pages from "../data/pages";
 import features from "../data/features";
@@ -83,17 +88,16 @@ export default () => {
         <Container className="position-relative justify-content-between px-3">
           <Navbar.Brand as={HashLink} to="#home" className="me-lg-3 d-flex align-items-center">
             <Image src={ReactHero} />
-            <span className="ms-2 brand-text d-none d-md-inline">Volt React</span>
+            <span className="ms-2 brand-text d-none d-md-inline">Trashnet</span>
           </Navbar.Brand>
 
           <div className="d-flex align-items-center">
             <Navbar.Collapse id="navbar-default-primary">
               <Nav className="navbar-nav-hover align-items-lg-center">
-                <Nav.Link as={HashLink} to="#features">Features</Nav.Link>
-                <Nav.Link as={HashLink} to="#pages">Pages</Nav.Link>
+                <Nav.Link as={HashLink} to="#features">About</Nav.Link>
+                <Nav.Link as={HashLink} to="#pages">Binvent</Nav.Link>
                 <Nav.Link as={HashLink} to="#folder" className="d-sm-none d-xl-inline">Folder Structure</Nav.Link>
-                <Nav.Link as={HashLink} to="#getting-started">Getting Started</Nav.Link>
-                <Nav.Link as={HashLink} to="#download">Upgrade to Pro</Nav.Link>
+                <Nav.Link as={HashLink} to="#download">Contact Us</Nav.Link>
               </Nav>
             </Navbar.Collapse>
             <Button as={HashLink} to="#download" variant="outline-white" className="ms-3"><FontAwesomeIcon icon={faDownload} className="me-1" /> Download</Button>
@@ -105,13 +109,18 @@ export default () => {
           <Row>
             <Col xs={12} className="text-center">
               <div className="react-big-icon d-none d-lg-block"><span className="fab fa-react"></span></div>
-              <h1 className="fw-bolder text-secondary">Volt React Dashboard</h1>
-              <p className="text-muted fw-light mb-5 h5">Open source powered by React.js and Bootstrap 5</p>
+              <h1 className="fw-bolder text-secondary">Making Net Zero a Reality</h1>
+              {/* <p className="text-muted fw-light mb-5 h5">Open source powered by React.js and Bootstrap 5</p> */}
               <div className="d-flex align-items-center justify-content-center">
-                <Button variant="secondary" as={Link} to={Routes.DashboardOverview.path} className="text-dark me-3">
-                  Explore dashboard <FontAwesomeIcon icon={faExternalLinkAlt} className="d-none d-sm-inline ms-1" />
+
+              <Button variant="secondary" as={Link} to={Routes.Signin.path} className="text-dark me-3">
+                  Login 
                 </Button>
-                <GitHubButton className="mt-lg-2" href="https://github.com/themesberg/volt-react-dashboard" data-size="large" data-show-count="true" aria-label="Star themesberg/volt-react-dashboard on GitHub">Star</GitHubButton>
+
+                <Button variant="secondary" as={Link} to={Routes.DashboardOverview.path} className="text-dark me-3">
+                  Explore ledger <FontAwesomeIcon icon={faExternalLinkAlt} className="d-none d-sm-inline ms-1" />
+                </Button>
+                
               </div>
               <div className="d-flex justify-content-center flex-column mb-6 mb-lg-5 mt-5">
                 <div className="text-center">
@@ -138,33 +147,20 @@ export default () => {
             </Col>
           </Row>
           <Row className="justify-content-center mt-5 mt-lg-6">
-            <Col xs={6} md={3} className="text-center mb-4">
-              <div className="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle mb-4">
-                <FontAwesomeIcon icon={faPager} className="text-secondary" />
-              </div>
-              <h3 className="fw-bolder">10</h3>
-              <p className="text-gray">Example Pages</p>
+            <Col xs={6} md={2} className="text-center mb-4">
+              <Image src={CryptoCapableLogo}  className="mb-3" alt="Themesberg Logo" />
             </Col>
-            <Col xs={6} md={3} className="text-center mb-4">
-              <div className="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle mb-4">
-                <FontAwesomeIcon icon={faReact} className="text-secondary" />
-              </div>
-              <h3 className="fw-bolder">100+</h3>
-              <p className="text-gray">React Components</p>
+            <Col xs={6} md={2} className="text-center mb-4">
+              <Image src={DSTLogo}  className="mb-3" alt="Themesberg Logo" />
             </Col>
-            <Col xs={6} md={3} className="text-center">
-              <div className="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle mb-4">
-                <FontAwesomeIcon icon={faSass} className="text-secondary" />
-              </div>
-              <h3 className="fw-bolder">Workflow</h3>
-              <p className="text-gray">Sass & react-app</p>
+            <Col xs={6} md={2} className="text-center">
+             <Image src={IndiaAccLogo}  className="mb-3" alt="Themesberg Logo" />
             </Col>
-            <Col xs={6} md={3} className="text-center">
-              <div className="icon icon-shape icon-lg bg-white shadow-lg border-light rounded-circle mb-4">
-                <FontAwesomeIcon color="secondary" icon={faBootstrap} className="text-secondary" />
-              </div>
-              <h3 className="fw-bolder">Bootstrap 5</h3>
-              <p className="text-gray">CSS Framework</p>
+            <Col xs={6} md={2} className="text-center">
+              <Image src={NearLogo}  className="mb-3" alt="Themesberg Logo" />
+            </Col>
+            <Col xs={6} md={2} className="text-center">
+              <Image src={SineLogo}  className="mb-3" alt="Themesberg Logo" />
             </Col>
           </Row>
         </Container>
@@ -369,7 +365,7 @@ export default () => {
         <Container>
           <Row>
             <Col xs={12} lg={8}>
-              <h2 className="fw-light mb-3">Download or upgrade to pro</h2>
+              {/* <h2 className="fw-light mb-3">Download or upgrade to pro</h2> */}
               <p className="lead mb-4 me-lg-6">Do you want to take React development to the next level? Check out the premium version of Volt React Dashboard in the following comparison table.</p>
             </Col>
             <Col xs={12} lg={4}>

@@ -10,14 +10,14 @@
 // Opacity classes
 @for $nr from 0 to 10 {
     .opacity-#{$nr} {
-        opacity: #{$nr/10} !important;
+        opacity: #{$nr*0.1} !important;
     }
 }
 
 // Fill opacity classes
 @for $nr from 0 to 10 {
     .fill-opacity-#{$nr} {
-        fill-opacity: #{$nr/10} !important;
+        fill-opacity: #{$nr*0.1} !important;
     }
 }
 

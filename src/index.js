@@ -16,12 +16,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from "react-router-dom";
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+
+
 
 // core styles
-import "./scss/volt.scss";
+// import "./scss/volt.scss";
+import "./scss/volt.css"
 
 // vendor styles
 import "react-datetime/css/react-datetime.css";
+
 
 import HomePage from "./pages/HomePage";
 import ScrollToTop from "./components/ScrollToTop";

@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faCog, faEnvelopeOpen, faSearch, faSignOutAlt, faUserShield } from "@fortawesome/free-solid-svg-icons";
 import { faUserCircle } from "@fortawesome/free-regular-svg-icons";
-import { Row, Col, Nav, Form, Image, Navbar, Dropdown, Container, ListGroup, InputGroup } from '@themesberg/react-bootstrap';
+import { Row, Col, Nav, Form, Button, Image, Navbar, Dropdown, Container, ListGroup, InputGroup } from '@themesberg/react-bootstrap';
+
+import { Routes } from "../routes";
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import NOTIFICATIONS_DATA from "../data/notifications";
 import Profile3 from "../assets/img/team/profile-picture-3.jpg";
@@ -114,7 +118,9 @@ export default (props) => {
               </Dropdown.Menu>
             </Dropdown>
           </Nav>
+         
         </div>
+        
       </Container>
     </Navbar>
   );

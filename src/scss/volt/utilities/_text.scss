@@ -19,7 +19,7 @@
 // from lh-100 to lh-300
 @for $nr from 0 to 21 {
   .lh-#{100 + $nr*10} {
-    line-height: #{1 + $nr/10};
+    line-height: #{1 + $nr*0.1};
   }
 }
 

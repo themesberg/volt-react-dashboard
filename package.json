@@ -1,7 +1,7 @@
 {
-  "name": "@themesberg/volt-react-dashboard",
-  "description": "Volt React Dashboard is a free and open source admin dashboard template powered by React.js and Bootstrap 5",
-  "author": "Themesberg",
+  "name": "Trashnet",
+  "description": "Trashnet UI",
+  "author": "Complicated",
   "keywords": [
     "bootstrap 5",
     "react",
@@ -14,13 +14,13 @@
     "themesberg"
   ],
   "license": "MIT",
-  "homepage": "https://demo.themesberg.com/volt-react-dashboard",
+  "homepage": "https://trashnet.netlify.app/",
   "bugs": {
-    "url": "https://github.com/themesberg/volt-react-dashboard/issues"
+    "url": "https://trashnet.netlify.app//"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/themesberg/volt-react-dashboard"
+    "url": "https://github.com/devd-99/trashnet-ui"
   },
   "version": "1.0.1",
   "dependencies": {
@@ -33,12 +33,13 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@themesberg/react-bootstrap": "^1.4.1",
-    "bootstrap": "5.0.0-beta1",
+    "bootstrap": "^5.0.0-beta1",
     "chartist": "^0.11.4",
     "chartist-plugin-tooltips-updated": "^0.1.4",
     "moment-timezone": "^0.5.31",
-    "node-sass": "^4.14.1",
+    "phosphor-react": "^1.4.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^2.4.0",
     "react-chartist": "^0.14.4",
     "react-copy-to-clipboard": "^5.0.3",
     "react-datetime": "^3.0.4",
@@ -47,8 +48,10 @@
     "react-live": "^2.2.3",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.3.1",
-    "react-scripts": "3.4.3",
+    "react-scripts": "^5.0.1",
     "react-transition-group": "^4.4.1",
+    "react-webcam": "^7.0.1",
+    "sass": "^1.52.3",
     "simplebar-react": "^2.3.0"
   },
   "scripts": {
