@@ -202,6 +202,7 @@ Volt React Dashboard
 │   │   ├── Presentation.js
 │   │   ├── Settings.js
 │   │   ├── Transactions.js
+│   │   ├── Upgrade.js
 │   │   ├── components
 │   │   ├── dashboard
 │   │   ├── documentation
