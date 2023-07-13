@@ -112,8 +112,8 @@ export const PageTrafficTable = () => {
           <thead className="thead-light">
             <tr>
               <th className="border-0">#</th>
-              <th className="border-0">Traffic Source</th>
-              <th className="border-0">Source Type</th>
+              <th className="border-0">Data Source</th>
+              <th className="border-0">Data Type</th>
               <th className="border-0">Category</th>
               <th className="border-0">Global Rank</th>
               <th className="border-0">Traffic Share</th>
