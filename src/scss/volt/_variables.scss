@@ -876,7 +876,7 @@ $custom-toggle-disabled-bg:                     $gray-200;
 $custom-toggle-disabled-checked-bg:             rgba($primary, .7);
 $custom-toggle-border-radius:                   .8rem;
 
-$custom-switch-indicator-size:                  calc(#{$custom-control-indicator-size} - #{$custom-control-indicator-border-width * 4});
+$custom-switch-indicator-size: math.div($custom-control-indicator-size, 4) - $custom-control-indicator-border-width * 4;
 
 $custom-checkbox-disabled-checked-color:        $gray-800;
 
